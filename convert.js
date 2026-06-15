@@ -182,7 +182,7 @@ function buildOffline() {
 
   const embed = '<script>window.__EMBEDDED__={synonyms:' + JSON.stringify(synJSON) + ',data:' + JSON.stringify(dataJSON) + '};</script>';
   let html = readFile(HTML_FILE);
-  html = html.replace('</body>', embed + '\n</body>');
+  html = html.replace('<script>', embed + '\n<script>');
   fs.writeFileSync(OUT_FILE, html, 'utf-8');
   console.log(`📦 离线版 → mis-review-offline.html  (${(fs.statSync(OUT_FILE).size / 1024).toFixed(0)} KB)`);
 }
