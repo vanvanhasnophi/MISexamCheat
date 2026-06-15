@@ -10,7 +10,7 @@
 --font-mono:'Consolas','SF Mono','Menlo','Monaco','Courier New',monospace;
 color-scheme:dark;font-family:var(--font-sans);text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;
 --accent:#2ea35f;--accent-dark:#24804a;
---bg-primary:#141414;--bg-secondary:#1e1e1e;--surface:#222;--surface-alt:#2a2a2a;
+--bg-primary:#111;--bg-secondary:#1e1e1e;--surface:#222;--surface-alt:#2a2a2a;
 --surface-blur:rgba(34,34,34,0.9);--surface-blur-alt:rgba(72,72,72,0.5);
 --surface-hover:rgba(255,255,255,0.08);--surface-active:rgba(255,255,255,0.14);
 --text-primary:#e0e0e0;--text-secondary:#a9a9a9;
@@ -77,6 +77,12 @@ body{background:var(--bg-primary);color:var(--text-primary);font-size:1rem;line-
 .session-ref{display:inline-flex;align-items:center;gap:3px;font-size:0.75rem;color:var(--text-secondary);text-decoration:none;padding:3px 8px;border-radius:var(--radius-pill);border:1px solid var(--border);flex-shrink:0;transition:all 0.15s}
 .session-ref:hover{color:var(--accent);border-color:var(--accent);background:rgba(46,163,95,0.1)}
 .session-ref svg{width:12px;height:12px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.block-ref{display:inline-flex;align-items:center;gap:3px;min-width:22px;height:22px;padding:0 6px;border-radius:var(--radius-sm);color:var(--text-secondary);text-decoration:none;flex-shrink:0;transition:all 0.15s;opacity:0;margin-right:0;font-size:0.7rem;white-space:nowrap}
+.block-head:hover .block-ref,.block.open .block-ref{opacity:1}
+.block-ref:hover{color:var(--accent);background:rgba(46,163,95,0.12)}
+.block-ref svg{width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.ref-page{font-size:0.65rem;font-weight:600;color:var(--accent);line-height:1;margin-left:1px}
+.ref-fname{max-width:120px;overflow:hidden;text-overflow:ellipsis}
 .session-arrow{display:flex;align-items:center;flex-shrink:0;transition:transform 0.2s}
 .session-arrow svg{width:12px;height:12px;stroke:var(--text-secondary);fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
 .session.open .session-arrow{transform:rotate(90deg)}
@@ -88,21 +94,28 @@ body{background:var(--bg-primary);color:var(--text-primary);font-size:1rem;line-
 .block-head{display:flex;align-items:center;gap:8px;padding:8px 12px;cursor:pointer;user-select:none;border-radius:var(--radius-md)}
 .block-head:hover{background:var(--surface-hover)}
 .block-arrow{display:flex;align-items:center;flex-shrink:0;transition:transform 0.15s}
-.block-arrow svg{width:10px;height:10px;stroke:var(--text-secondary);fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.block-arrow svg{width:12px;height:12px;stroke:var(--text-secondary);fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
 .block.open .block-arrow{transform:rotate(90deg)}
-.block-title{flex:1;font-size:0.88rem;font-weight:500}
+.block-title{flex:1;font-size:0.88rem;font-weight:500; color:var(--text-secondary)}
 .block-badge{font-size:0.7rem;padding:1px 8px;border-radius:var(--radius-pill);background:rgba(255,215,0,0.15);color:#ffd700;flex-shrink:0}
-.block-body{display:none;padding:4px 12px 10px 20px;font-size:0.88rem;line-height:1.65}
+.block-body{display:none;padding:4px 12px 10px 20px;font-size:0.88rem;line-height:1.6}
 .block.open .block-body{display:block}
-.block-body p{margin:0 0 0.4rem}
-.block-body ul,.block-body ol{margin:0 0 0.4rem;padding-left:1.5rem}
-.block-body li{margin:0.2rem 0}
+.block-body p{margin:0 0 0.2rem}
+.block-body ul,.block-body ol{margin:0 0 0.4rem;padding-left:1.3rem}
+.block-body li{margin:2px 0;line-height:1.4}
 .block-body li::marker{color:rgba(224,224,224,0.4)}
+.block-body ol li::marker{font-weight:500}
 .block-body table{width:100%;border-collapse:collapse;margin:0.5rem 0;font-size:0.82rem;border:1px solid var(--border);border-radius:var(--radius-sm);overflow:hidden}
 .block-body th{background:rgba(128,128,128,0.25);font-weight:600;padding:6px 10px;text-align:left}
 .block-body td{padding:5px 10px;background:var(--surface-blur-alt);border-top:1px solid var(--border)}
 .block-body code{background:var(--code-bg);color:var(--code-text);border-radius:4px;padding:0.15em 0.4em;font-size:0.82em;font-family:var(--font-mono)}
 .block-body strong{color:#fff}
+.bilingual-cols{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.bilingual-cols .col-en,.bilingual-cols .col-zh{min-width:0}
+.col-label{font-size:0.62rem;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:0.8px;margin-bottom:4px;padding-bottom:3px;border-bottom:1px solid var(--border)}
+.lang-label{font-size:0.65rem;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:0.8px;margin:0.5rem 0 0.2rem;padding:1px 0}
+.lang-label:first-child{margin-top:0}
+@media(max-width:600px){.bilingual-cols{grid-template-columns:1fr}}
 .block-body blockquote{border-left:3px solid var(--accent);background:var(--surface-active);padding:0.4em 0.8em;margin:0.4em 0;border-radius:var(--radius-sm)}
 
 mark.hl{background:rgba(255,215,0,0.45);color:var(--text-primary);border-radius:2px;padding:0 1px}
@@ -134,7 +147,7 @@ mark.hl{background:rgba(255,215,0,0.45);color:var(--text-primary);border-radius:
 </div>
 <div class="toolbar">
 <button class="btn active" id="btnEN"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10"/><path d="M12 2a15.3 15.3 0 00-4 10 15.3 15.3 0 004 10"/></svg> EN</button>
-<button class="btn" id="btnZH"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10"/><path d="M12 2a15.3 15.3 0 00-4 10 15.3 15.3 0 004 10"/></svg> 中文</button>
+<button class="btn active" id="btnZH"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10"/><path d="M12 2a15.3 15.3 0 00-4 10 15.3 15.3 0 004 10"/></svg> 中文</button>
 <span class="status-bar">
 <span class="status-dot" id="statusDot"></span><span id="statusText">加载中…</span>
 </span>
@@ -150,13 +163,23 @@ mark.hl{background:rgba(255,215,0,0.45);color:var(--text-primary);border-radius:
 <script>
 // ===== DATA =====
 let SYNONYMS = {};
-let DATA_EN = null;   // parsed JSON: { meta, sessions }
-let DATA_ZH = null;
-let currentLang = 'en';
+let DATA = null;
+let showEN = true;
+let showZH = true;
 let searchQuery = '';
 
-function getData() {
-  return currentLang === 'en' ? DATA_EN : DATA_ZH;
+function renderBlockBody(b) {
+  if (showEN && showZH) {
+    return `<div class="bilingual-cols"><div class="col-en"><div class="col-label">EN</div>${md2html(b.body.en)}</div><div class="col-zh"><div class="col-label">ZH</div>${md2html(b.body.zh)}</div></div>`;
+  }
+  const lang = showEN ? 'en' : 'zh';
+  return md2html(b.body[lang]);
+}
+
+function blockTitleText(b, s) {
+  if (!b.title.en && !b.title.zh) return s.title[showEN ? 'en' : 'zh'] || '';
+  if (showEN && showZH) return (b.title.en || '') + ' | ' + (b.title.zh || '');
+  return b.title[showEN ? 'en' : 'zh'] || b.title[showEN ? 'zh' : 'en'] || '';
 }
 
 // ===== LOAD =====
@@ -173,8 +196,7 @@ async function init() {
 
   const tasks = [
     { name: 'synonyms.json', fn: () => loadJSON('synonyms.json').then(d => { SYNONYMS = d; }) },
-    { name: 'en.json', fn: () => loadJSON('content/en.json').then(d => { DATA_EN = d; }) },
-    { name: 'zh.json', fn: () => loadJSON('content/zh.json').then(d => { DATA_ZH = d; }) }
+    { name: 'data.json', fn: () => loadJSON('content/data.json').then(d => { DATA = d; }) }
   ];
 
   let ok = 0, failed = [];
@@ -183,27 +205,17 @@ async function init() {
     catch(e) { failed.push(t.name); st.textContent = `✗ ${t.name}`; }
   }
 
-  if (failed.length > 0) {
-    sd.className = 'status-dot err';
-    st.textContent = '加载失败';
-  }
+  if (failed.length > 0) { sd.className = 'status-dot err'; st.textContent = '加载失败'; }
 
-  if (!DATA_EN && !DATA_ZH) {
+  if (!DATA || !DATA.sessions) {
     main.innerHTML = `<div class="err-box fade-in">
       <div class="icon-svg" style="justify-content:center;margin-bottom:12px"><svg width="36" height="36" viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
-      <p><strong>无法加载内容文件</strong></p>
-      <p style="margin-top:8px">请先运行 <span class="cmd">node convert.js</span> 生成 content/*.json</p>
-      <p style="margin-top:8px">然后在项目目录启动服务器：</p>
+      <p><strong>无法加载数据</strong></p>
+      <p style="margin-top:8px">请先运行 <span class="cmd">node convert.js</span></p>
       <p style="margin-top:4px"><span class="cmd">npx serve .</span></p>
-      <p style="font-size:0.8rem;margin-top:4px">浏览器打开 <code>http://localhost:3000/mis-review.html</code></p>
-      <p style="margin-top:8px;font-size:0.78rem">失败: ${failed.join(', ')}</p>
     </div>`;
     return;
   }
-
-  // Fallback for partial load
-  if (!DATA_EN) DATA_EN = DATA_ZH;
-  if (!DATA_ZH) DATA_ZH = DATA_EN;
 
   sd.className = 'status-dot ok';
   st.textContent = '就绪';
@@ -214,13 +226,12 @@ async function init() {
 // ===== RENDER =====
 function render() {
   const main = document.getElementById('main');
-  const data = getData();
-  if (!data || !data.sessions) {
-    main.innerHTML = '<div class="err-box"><div class="icon-svg" style="justify-content:center;margin-bottom:12px"><svg width="32" height="32" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></div><p>当前语言数据为空</p></div>';
+  if (!DATA || !DATA.sessions) {
+    main.innerHTML = '<div class="err-box">数据为空</div>';
     return;
   }
 
-  const sessions = data.sessions;
+  const sessions = DATA.sessions;
   const q = searchQuery.trim().toLowerCase();
 
   // Synonym expansion
@@ -253,44 +264,50 @@ function render() {
 
     for (const b of s.blocks) {
       let hit = false;
-      let bodyHtml = md2html(b.body);
+      const bTitle = blockTitleText(b, s);
+      let bodyHtml = renderBlockBody(b);
 
       if (q) {
-        const txt = (b.title + ' ' + b.body).toLowerCase();
-        for (const t of tokens) {
-          if (!t) continue;
-          const re = buildTokenRE(t);
-          if (re.test(txt)) { hit = true; break; }
+        const txt = (b.title.en||'') + ' ' + (b.title.zh||'') + ' ' + (b.body.en||'') + ' ' + (b.body.zh||'');
+        for (const tk of tokens) {
+          if (!tk) continue;
+          if (buildTokenRE(tk).test(txt.toLowerCase())) { hit = true; break; }
         }
         if (hit) { sHit = true; totalHits++; }
-        // Highlight on HTML (after markdown→HTML conversion)
-        for (const t of tokens) {
-          if (!t) continue;
-          bodyHtml = bodyHtml.replace(buildTokenRE(t), '<mark class="hl">$1</mark>');
+        bodyHtml = renderBlockBody(b); // re-render with highlights
+        for (const tk of tokens) {
+          if (!tk) continue;
+          bodyHtml = bodyHtml.replace(buildTokenRE(tk), '<mark class="hl">$1</mark>');
         }
       }
 
+      const refFile = s.ref ? s.ref.replace(/^ref\//, '') : '';
+      const blockRefHref = s.ref + (b.page ? '#page=' + b.page : '');
+      const blockRefHtml = s.ref
+        ? `<a class="block-ref" href="${esc(blockRefHref)}" target="_blank" title="${esc(refFile)}${b.page ? ' p.'+b.page : ''}" onclick="event.stopPropagation()"><svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg><span class="ref-fname">${esc(refFile)}</span>${b.page ? '<span class="ref-page">'+b.page+'</span>' : ''}</a>`
+        : '';
       const cls = hit ? 'block open match' : 'block';
       blocksHtml += `<div class="${cls}">
         <div class="block-head" onclick="this.parentElement.classList.toggle('open')">
           <span class="block-arrow"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></span>
-          <span class="block-title">${esc(b.title || s.title)}</span>
+          <span class="block-title">${esc(bTitle)}</span>
+          ${blockRefHtml}
           ${hit ? '<span class="block-badge"><svg style="width:10px;height:10px;stroke:#ffd700;fill:none;stroke-width:2.5;stroke-linecap:round" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>' : ''}
         </div>
         <div class="block-body">${bodyHtml}</div>
       </div>`;
     }
 
-    // Ref link
     const refHtml = s.ref
       ? `<a class="session-ref" href="${esc(s.ref)}" target="_blank" title="打开原始课件 PDF" onclick="event.stopPropagation()"><svg viewBox="0 0 24 24"><path d="M21.44 11.05l-9.19 9.19a6 6 0 01-8.49-8.49l9.19-9.19a4 4 0 015.66 5.66l-9.2 9.19a2 2 0 01-2.83-2.83l8.49-8.48"/></svg> PDF</a>`
       : '';
 
+    const sTitle = showEN && showZH ? (s.title.en || s.title.zh) : (s.title[showEN ? 'en' : 'zh'] || s.title[showEN ? 'zh' : 'en'] || '');
     const sCls = 'session' + (sHit ? ' open highlight' : '');
     html += `<div class="${sCls}">
       <div class="session-head" onclick="this.parentElement.classList.toggle('open')">
         <span class="session-num">${esc(s.id)}</span>
-        <span class="session-title">${esc(s.title)}</span>
+        <span class="session-title">${esc(sTitle)}</span>
         ${refHtml}
         <span class="session-arrow"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></span>
       </div>
@@ -300,7 +317,7 @@ function render() {
 
   // Footer
   if (!q) {
-    html += `<div class="empty fade-in"><div class="icon-svg" style="justify-content:center;margin-bottom:12px"><svg width="36" height="36" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg></div><p>${data.meta.title} · ${sessions.length} 章</p><p style="font-size:0.8rem;color:var(--text-secondary)">输入关键词搜索 · 中英文同义词 · 点击展开</p></div>`;
+    html += `<div class="empty fade-in"><div class="icon-svg" style="justify-content:center;margin-bottom:12px"><svg width="36" height="36" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg></div><p>共 ${sessions.length} 章</p><p style="font-size:0.8rem;color:var(--text-secondary)">输入关键词搜索 · 中英文同义词 · 点击展开</p></div>`;
   } else if (totalHits === 0) {
     html += `<div class="empty fade-in"><div class="icon-svg" style="justify-content:center;margin-bottom:12px"><svg width="36" height="36" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div><p>未找到 "<strong>${esc(searchQuery)}</strong>"</p><p style="font-size:0.8rem;color:var(--text-secondary)">试试中英文对应词</p></div>`;
   }
@@ -317,15 +334,44 @@ function md2html(md) {
   h = h.replace(/`([^`]+)`/g,'<code>$1</code>');
   h = h.replace(/(?<!\*)\*([^*\n]+?)\*(?!\*)/g,'<em>$1</em>');
 
-  // Tables
   const lines = h.split('\n');
-  const out = []; let tbl = [];
-  for (const l of lines) {
-    if (/^\|.+\|/.test(l)) { tbl.push(l); }
-    else { if (tbl.length) { out.push(renderTable(tbl)); tbl = []; } out.push(l); }
+  const out = [];
+
+  function flushGroup(g) {
+    if (!g.length) return;
+    const isOL = /^\d+\.\s/.test(g[0]);
+    const tag = isOL ? 'ol' : 'ul';
+    out.push('<' + tag + '>');
+    for (const item of g) {
+      const content = item.replace(/^(\d+\.\s|[-*]\s)/, '');
+      out.push('<li>' + content + '</li>');
+    }
+    out.push('</' + tag + '>');
   }
+
+  let group = [], tbl = [];
+  for (const l of lines) {
+    if (/^\|.+\|/.test(l)) {
+      flushGroup(group); group = [];
+      tbl.push(l);
+      continue;
+    }
+    if (tbl.length) { out.push(renderTable(tbl)); tbl = []; }
+
+    if (/^(\d+\.\s|[-*]\s)/.test(l)) {
+      const isOL = /^\d+\.\s/.test(l);
+      const prevOL = group.length && /^\d+\.\s/.test(group[0]);
+      if (group.length && isOL !== prevOL) { flushGroup(group); group = []; }
+      group.push(l);
+      continue;
+    }
+
+    flushGroup(group); group = [];
+    out.push(l);
+  }
+  flushGroup(group);
   if (tbl.length) out.push(renderTable(tbl));
-  return out.join('<br>');
+  return out.filter(l => l !== '').join('');
 }
 
 function renderTable(lns) {
@@ -457,12 +503,16 @@ document.getElementById('clearBtn').addEventListener('click', function() {
 
 // ===== LANGUAGE =====
 document.getElementById('btnEN').addEventListener('click', function() {
-  this.classList.add('active'); document.getElementById('btnZH').classList.remove('active');
-  currentLang = 'en'; render(); window.scrollTo({top:0,behavior:'smooth'});
+  this.classList.toggle('active');
+  showEN = this.classList.contains('active');
+  if (!showEN && !showZH) { showZH = true; document.getElementById('btnZH').classList.add('active'); }
+  render();
 });
 document.getElementById('btnZH').addEventListener('click', function() {
-  this.classList.add('active'); document.getElementById('btnEN').classList.remove('active');
-  currentLang = 'zh'; render(); window.scrollTo({top:0,behavior:'smooth'});
+  this.classList.toggle('active');
+  showZH = this.classList.contains('active');
+  if (!showEN && !showZH) { showEN = true; document.getElementById('btnEN').classList.add('active'); }
+  render();
 });
 
 // ===== KEYBOARD =====
