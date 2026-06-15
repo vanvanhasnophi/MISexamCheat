@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>MIS 期末速查</title>
+<style>
+:root{
+--font-sans:-apple-system,BlinkMacSystemFont,'SF Pro Text','Inter','Segoe UI','Roboto','PingFang SC','Microsoft YaHei',sans-serif;
+--font-mono:'Consolas','SF Mono','Menlo','Monaco','Courier New',monospace;
+color-scheme:dark;font-family:var(--font-sans);text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;
+--accent:#2ea35f;--accent-dark:#24804a;
+--bg-primary:#141414;--bg-secondary:#1e1e1e;--surface:#222;--surface-alt:#2a2a2a;
+--surface-blur:rgba(34,34,34,0.9);--surface-blur-alt:rgba(72,72,72,0.5);
+--surface-hover:rgba(255,255,255,0.08);--surface-active:rgba(255,255,255,0.14);
+--text-primary:#e0e0e0;--text-secondary:#a9a9a9;
+--border:rgba(169,169,169,0.2);--border-blur:rgba(113,113,113,0.2);
+--code-bg:rgba(255,0,0,0.12);--code-text:#ff8585;
+--radius-sm:4px;--radius-md:8px;--radius-lg:12px;--radius-pill:9999px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg-primary);color:var(--text-primary);font-size:1rem;line-height:1.5;}
+::-webkit-scrollbar{width:12px;height:12px}
+::-webkit-scrollbar-track{background:var(--surface-blur)}
+::-webkit-scrollbar-thumb{background:rgba(165,165,165,0.4);border-radius:var(--radius-pill)}
+
+.header{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--surface-blur);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--border-blur);padding:12px 16px}
+.header-inner{max-width:960px;margin:0 auto;display:flex;flex-direction:column;gap:10px}
+.search-box{display:flex;align-items:center;background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius-pill);padding:8px 16px;gap:8px;transition:border-color 0.2s}
+.search-box:focus-within{border-color:var(--accent);box-shadow:0 0 0 3px rgba(46,163,95,0.15)}
+.search-box input{flex:1;border:none;background:transparent;color:var(--text-primary);font-size:0.95rem;outline:none;min-width:0}
+.search-box input::placeholder{color:var(--text-secondary)}
+.search-icon{color:var(--text-secondary);flex-shrink:0;display:flex;align-items:center}
+.search-icon svg{width:16px;height:16px;stroke:var(--text-secondary);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.search-clear{display:none;background:none;border:none;color:var(--text-secondary);cursor:pointer;padding:2px 6px;border-radius:var(--radius-sm);flex-shrink:0;align-items:center}
+.search-clear:hover{color:var(--text-primary)}
+.search-clear:hover svg{stroke:var(--text-primary)}
+.search-clear.visible{display:flex}
+.search-clear svg{width:14px;height:14px;stroke:var(--text-secondary);fill:none;stroke-width:2;stroke-linecap:round}
+.btn svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.btn.active svg{stroke:#fff}
+.icon-svg{display:inline-flex;align-items:center}
+.icon-svg svg{stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.toolbar{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:5px;border-radius:var(--radius-pill);border:1px solid var(--border);padding:6px 14px;font:inherit;font-size:0.85rem;font-weight:500;background:var(--surface-alt);color:var(--text-primary);cursor:pointer;transition:all 0.15s ease;white-space:nowrap;user-select:none}
+.btn:hover{border-color:var(--accent);background:var(--surface-hover)}
+.btn.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.status-bar{display:flex;align-items:center;gap:6px;font-size:0.78rem;color:var(--text-secondary);margin-left:auto;flex-shrink:0}
+.status-dot{width:6px;height:6px;border-radius:50%;flex-shrink:0}
+.status-dot.ok{background:var(--accent)}
+.status-dot.err{background:#ff4d50}
+.synonym-hint{font-size:0.75rem;color:var(--text-secondary);padding:2px 10px;border-radius:var(--radius-pill);background:var(--surface-hover);max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+/* Suggestion dropdown */
+.suggest-wrap{position:relative;flex:1;display:flex}
+.suggest-wrap .search-box{flex:1}
+.suggest-drop{display:none;position:absolute;top:calc(100% + 6px);left:0;right:0;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:10px 12px;z-index:200;box-shadow:var(--shadow-3);max-height:200px;overflow-y:auto;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.suggest-drop.open{display:block}
+.suggest-drop::-webkit-scrollbar{width:4px}
+.suggest-label{font-size:0.68rem;color:var(--text-secondary);padding:0 2px 6px;text-transform:uppercase;letter-spacing:0.5px}
+.suggest-chips{display:flex;flex-wrap:wrap;gap:5px}
+.chip{display:inline-flex;align-items:center;gap:2px;padding:4px 10px;border-radius:var(--radius-pill);font-size:0.8rem;border:1px solid var(--border);background:var(--surface-alt);color:var(--text-primary);cursor:pointer;transition:all 0.12s;white-space:nowrap;user-select:none}
+.chip:hover{border-color:var(--accent);background:rgba(46,163,95,0.12)}
+.chip:active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.chip .chip-lang{font-size:0.6rem;color:var(--text-secondary);opacity:0.7}
+.chip:hover .chip-lang{color:var(--accent)}
+
+.main{padding-top:120px;max-width:960px;margin:0 auto;padding-left:16px;padding-right:16px;padding-bottom:80px}
+@media(max-width:600px){.main{padding-top:150px}}
+
+.session{margin-bottom:8px;border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--border);background:var(--surface);transition:border-color 0.2s}
+.session.highlight{border-color:var(--accent);box-shadow:0 0 20px rgba(46,163,95,0.12)}
+.session-head{display:flex;align-items:center;gap:10px;padding:12px 16px;cursor:pointer;user-select:none;background:var(--surface-blur-alt)}
+.session-head:hover{background:var(--surface-hover)}
+.session-num{font-size:0.8rem;font-weight:700;color:var(--accent);background:rgba(46,163,95,0.15);padding:3px 10px;border-radius:var(--radius-pill);flex-shrink:0}
+.session-title{flex:1;font-size:0.95rem;font-weight:600;min-width:0}
+.session-ref{display:inline-flex;align-items:center;gap:3px;font-size:0.75rem;color:var(--text-secondary);text-decoration:none;padding:3px 8px;border-radius:var(--radius-pill);border:1px solid var(--border);flex-shrink:0;transition:all 0.15s}
+.session-ref:hover{color:var(--accent);border-color:var(--accent);background:rgba(46,163,95,0.1)}
+.session-ref svg{width:12px;height:12px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.session-arrow{display:flex;align-items:center;flex-shrink:0;transition:transform 0.2s}
+.session-arrow svg{width:12px;height:12px;stroke:var(--text-secondary);fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.session.open .session-arrow{transform:rotate(90deg)}
+.session-body{display:none;padding:8px 16px 16px;border-top:1px solid var(--border)}
+.session.open .session-body{display:block}
+
+.block{margin-bottom:6px;border-radius:var(--radius-md);overflow:hidden;border:1px solid transparent;transition:all 0.15s}
+.block.match{border-color:rgba(46,163,95,0.25);background:rgba(46,163,95,0.04)}
+.block-head{display:flex;align-items:center;gap:8px;padding:8px 12px;cursor:pointer;user-select:none;border-radius:var(--radius-md)}
+.block-head:hover{background:var(--surface-hover)}
+.block-arrow{display:flex;align-items:center;flex-shrink:0;transition:transform 0.15s}
+.block-arrow svg{width:10px;height:10px;stroke:var(--text-secondary);fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.block.open .block-arrow{transform:rotate(90deg)}
+.block-title{flex:1;font-size:0.88rem;font-weight:500}
+.block-badge{font-size:0.7rem;padding:1px 8px;border-radius:var(--radius-pill);background:rgba(255,215,0,0.15);color:#ffd700;flex-shrink:0}
+.block-body{display:none;padding:4px 12px 10px 20px;font-size:0.88rem;line-height:1.65}
+.block.open .block-body{display:block}
+.block-body p{margin:0 0 0.4rem}
+.block-body ul,.block-body ol{margin:0 0 0.4rem;padding-left:1.5rem}
+.block-body li{margin:0.2rem 0}
+.block-body li::marker{color:rgba(224,224,224,0.4)}
+.block-body table{width:100%;border-collapse:collapse;margin:0.5rem 0;font-size:0.82rem;border:1px solid var(--border);border-radius:var(--radius-sm);overflow:hidden}
+.block-body th{background:rgba(128,128,128,0.25);font-weight:600;padding:6px 10px;text-align:left}
+.block-body td{padding:5px 10px;background:var(--surface-blur-alt);border-top:1px solid var(--border)}
+.block-body code{background:var(--code-bg);color:var(--code-text);border-radius:4px;padding:0.15em 0.4em;font-size:0.82em;font-family:var(--font-mono)}
+.block-body strong{color:#fff}
+.block-body blockquote{border-left:3px solid var(--accent);background:var(--surface-active);padding:0.4em 0.8em;margin:0.4em 0;border-radius:var(--radius-sm)}
+
+mark.hl{background:rgba(255,215,0,0.45);color:var(--text-primary);border-radius:2px;padding:0 1px}
+
+.loading{text-align:center;padding:80px 20px;color:var(--text-secondary)}
+.spinner{display:inline-block;width:32px;height:32px;border:3px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin 0.6s linear infinite;margin-bottom:12px}
+@keyframes spin{to{transform:rotate(360deg)}}
+.err-box{text-align:center;padding:60px 20px;color:var(--text-secondary)}
+.err-box .icon{font-size:2.5rem;margin-bottom:12px}
+.err-box p{margin:4px 0;font-size:0.9rem}
+.err-box .cmd{display:inline-block;background:var(--surface-alt);padding:6px 14px;border-radius:6px;margin:4px;font-family:var(--font-mono);font-size:0.82rem}
+.empty{text-align:center;padding:60px 20px;color:var(--text-secondary)}
+.empty-icon{font-size:2.5rem;margin-bottom:12px}
+@keyframes fade-in{from{opacity:0}to{opacity:1}}
+.fade-in{animation:fade-in 0.2s ease}
+</style>
+</head>
+<body>
+
+<header class="header">
+<div class="header-inner">
+<div class="suggest-wrap">
+<div class="search-box">
+<span class="search-icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span>
+<input type="text" id="searchInput" placeholder="搜索知识点（支持中英文同义词）…" autocomplete="off">
+<button class="search-clear" id="clearBtn" title="清除"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+</div>
+<div class="suggest-drop" id="suggestDrop"></div>
+</div>
+<div class="toolbar">
+<button class="btn active" id="btnEN"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10"/><path d="M12 2a15.3 15.3 0 00-4 10 15.3 15.3 0 004 10"/></svg> EN</button>
+<button class="btn" id="btnZH"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10"/><path d="M12 2a15.3 15.3 0 00-4 10 15.3 15.3 0 004 10"/></svg> 中文</button>
+<span class="status-bar">
+<span class="status-dot" id="statusDot"></span><span id="statusText">加载中…</span>
+</span>
+<span class="synonym-hint" id="synonymHint" style="display:none"></span>
+</div>
+</div>
+</header>
+
+<main class="main" id="main">
+<div class="loading"><div class="spinner"></div><p>加载数据…</p></div>
+</main>
+
+<script>
+// ===== DATA =====
+let SYNONYMS = {};
+let DATA_EN = null;   // parsed JSON: { meta, sessions }
+let DATA_ZH = null;
+let currentLang = 'en';
+let searchQuery = '';
+
+function getData() {
+  return currentLang === 'en' ? DATA_EN : DATA_ZH;
+}
+
+// ===== LOAD =====
+async function loadJSON(path) {
+  const r = await fetch(path);
+  if (!r.ok) throw new Error(`HTTP ${r.status}`);
+  return r.json();
+}
+
+async function init() {
+  const main = document.getElementById('main');
+  const sd = document.getElementById('statusDot');
+  const st = document.getElementById('statusText');
+
+  const tasks = [
+    { name: 'synonyms.json', fn: () => loadJSON('synonyms.json').then(d => { SYNONYMS = d; }) },
+    { name: 'en.json', fn: () => loadJSON('content/en.json').then(d => { DATA_EN = d; }) },
+    { name: 'zh.json', fn: () => loadJSON('content/zh.json').then(d => { DATA_ZH = d; }) }
+  ];
+
+  let ok = 0, failed = [];
+  for (const t of tasks) {
+    try { await t.fn(); ok++; st.textContent = `${ok}/${tasks.length}`; }
+    catch(e) { failed.push(t.name); st.textContent = `✗ ${t.name}`; }
+  }
+
+  if (failed.length > 0) {
+    sd.className = 'status-dot err';
+    st.textContent = '加载失败';
+  }
+
+  if (!DATA_EN && !DATA_ZH) {
+    main.innerHTML = `<div class="err-box fade-in">
+      <div class="icon-svg" style="justify-content:center;margin-bottom:12px"><svg width="36" height="36" viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
+      <p><strong>无法加载内容文件</strong></p>
+      <p style="margin-top:8px">请先运行 <span class="cmd">node convert.js</span> 生成 content/*.json</p>
+      <p style="margin-top:8px">然后在项目目录启动服务器：</p>
+      <p style="margin-top:4px"><span class="cmd">npx serve .</span></p>
+      <p style="font-size:0.8rem;margin-top:4px">浏览器打开 <code>http://localhost:3000/mis-review.html</code></p>
+      <p style="margin-top:8px;font-size:0.78rem">失败: ${failed.join(', ')}</p>
+    </div>`;
+    return;
+  }
+
+  // Fallback for partial load
+  if (!DATA_EN) DATA_EN = DATA_ZH;
+  if (!DATA_ZH) DATA_ZH = DATA_EN;
+
+  sd.className = 'status-dot ok';
+  st.textContent = '就绪';
+  render();
+  document.getElementById('searchInput').focus();
+}
+
+// ===== RENDER =====
+function render() {
+  const main = document.getElementById('main');
+  const data = getData();
+  if (!data || !data.sessions) {
+    main.innerHTML = '<div class="err-box"><div class="icon-svg" style="justify-content:center;margin-bottom:12px"><svg width="32" height="32" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></div><p>当前语言数据为空</p></div>';
+    return;
+  }
+
+  const sessions = data.sessions;
+  const q = searchQuery.trim().toLowerCase();
+
+  // Synonym expansion
+  let tokens = q ? [q] : [];
+  if (q && Object.keys(SYNONYMS).length) {
+    for (const [key, syns] of Object.entries(SYNONYMS)) {
+      const all = [key.toLowerCase(), ...syns.map(s => s.toLowerCase())];
+      for (const t of all) {
+        if (q === t || q.includes(t) || t.includes(q)) {
+          tokens.push(key.toLowerCase(), ...syns.map(s => s.toLowerCase()));
+          break;
+        }
+      }
+    }
+    tokens = [...new Set(tokens)];
+  }
+
+  // Synonym hint
+  const hint = document.getElementById('synonymHint');
+  if (q && tokens.length > 1) {
+    hint.innerHTML = '<svg style="width:12px;height:12px;stroke:var(--text-secondary);fill:none;stroke-width:2;stroke-linecap:round;vertical-align:middle" viewBox="0 0 24 24"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg> ' + tokens.filter(t => t !== q).slice(0, 5).join(', ');
+    hint.style.display = 'block';
+  } else { hint.style.display = 'none'; }
+
+  let totalHits = 0, html = '';
+
+  for (const s of sessions) {
+    let sHit = false;
+    let blocksHtml = '';
+
+    for (const b of s.blocks) {
+      let hit = false;
+      let bodyHtml = md2html(b.body);
+
+      if (q) {
+        const txt = (b.title + ' ' + b.body).toLowerCase();
+        for (const t of tokens) {
+          if (!t) continue;
+          const re = buildTokenRE(t);
+          if (re.test(txt)) { hit = true; break; }
+        }
+        if (hit) { sHit = true; totalHits++; }
+        // Highlight on HTML (after markdown→HTML conversion)
+        for (const t of tokens) {
+          if (!t) continue;
+          bodyHtml = bodyHtml.replace(buildTokenRE(t), '<mark class="hl">$1</mark>');
+        }
+      }
+
+      const cls = hit ? 'block open match' : 'block';
+      blocksHtml += `<div class="${cls}">
+        <div class="block-head" onclick="this.parentElement.classList.toggle('open')">
+          <span class="block-arrow"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></span>
+          <span class="block-title">${esc(b.title || s.title)}</span>
+          ${hit ? '<span class="block-badge"><svg style="width:10px;height:10px;stroke:#ffd700;fill:none;stroke-width:2.5;stroke-linecap:round" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>' : ''}
+        </div>
+        <div class="block-body">${bodyHtml}</div>
+      </div>`;
+    }
+
+    // Ref link
+    const refHtml = s.ref
+      ? `<a class="session-ref" href="${esc(s.ref)}" target="_blank" title="打开原始课件 PDF" onclick="event.stopPropagation()"><svg viewBox="0 0 24 24"><path d="M21.44 11.05l-9.19 9.19a6 6 0 01-8.49-8.49l9.19-9.19a4 4 0 015.66 5.66l-9.2 9.19a2 2 0 01-2.83-2.83l8.49-8.48"/></svg> PDF</a>`
+      : '';
+
+    const sCls = 'session' + (sHit ? ' open highlight' : '');
+    html += `<div class="${sCls}">
+      <div class="session-head" onclick="this.parentElement.classList.toggle('open')">
+        <span class="session-num">${esc(s.id)}</span>
+        <span class="session-title">${esc(s.title)}</span>
+        ${refHtml}
+        <span class="session-arrow"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></span>
+      </div>
+      <div class="session-body">${blocksHtml}</div>
+    </div>`;
+  }
+
+  // Footer
+  if (!q) {
+    html += `<div class="empty fade-in"><div class="icon-svg" style="justify-content:center;margin-bottom:12px"><svg width="36" height="36" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg></div><p>${data.meta.title} · ${sessions.length} 章</p><p style="font-size:0.8rem;color:var(--text-secondary)">输入关键词搜索 · 中英文同义词 · 点击展开</p></div>`;
+  } else if (totalHits === 0) {
+    html += `<div class="empty fade-in"><div class="icon-svg" style="justify-content:center;margin-bottom:12px"><svg width="36" height="36" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div><p>未找到 "<strong>${esc(searchQuery)}</strong>"</p><p style="font-size:0.8rem;color:var(--text-secondary)">试试中英文对应词</p></div>`;
+  }
+
+  main.innerHTML = html;
+  if (!q) document.querySelectorAll('.session').forEach(el => el.classList.add('open'));
+}
+
+// ===== Markdown → HTML =====
+function md2html(md) {
+  if (!md) return '';
+  let h = esc(md);
+  h = h.replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>');
+  h = h.replace(/`([^`]+)`/g,'<code>$1</code>');
+  h = h.replace(/(?<!\*)\*([^*\n]+?)\*(?!\*)/g,'<em>$1</em>');
+
+  // Tables
+  const lines = h.split('\n');
+  const out = []; let tbl = [];
+  for (const l of lines) {
+    if (/^\|.+\|/.test(l)) { tbl.push(l); }
+    else { if (tbl.length) { out.push(renderTable(tbl)); tbl = []; } out.push(l); }
+  }
+  if (tbl.length) out.push(renderTable(tbl));
+  return out.join('<br>');
+}
+
+function renderTable(lns) {
+  if (lns.length < 2) return lns.join('<br>');
+  const pr = l => l.replace(/^\|/,'').replace(/\|$/,'').split('|').map(c => c.trim());
+  const hd = pr(lns[0]), sp = pr(lns[1]);
+  if (!sp.every(c => /^:?-{3,}:?$/.test(c))) return lns.join('<br>');
+  let t = '<table><thead><tr>';
+  for (const c of hd) t += `<th>${c}</th>`;
+  t += '</tr></thead><tbody>';
+  for (let i = 2; i < lns.length; i++) {
+    t += '<tr>';
+    for (const c of pr(lns[i])) t += `<td>${c}</td>`;
+    t += '</tr>';
+  }
+  return t + '</tbody></table>';
+}
+
+function esc(s) { return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+// Build regex for a search token: ASCII tokens get \b word boundaries, CJK tokens match directly
+function buildTokenRE(token) {
+  const raw = token.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+  if (/[一-鿿぀-ゟ가-힯]/.test(token)) {
+    return new RegExp('(' + raw + ')', 'gi');
+  }
+  return new RegExp('\\b(' + raw + ')\\b', 'gi');
+}
+
+// ===== SUGGESTIONS =====
+function lookupSuggestions(input) {
+  const q = input.trim().toLowerCase();
+  if (!q || !Object.keys(SYNONYMS).length) return [];
+  const results = [];
+  const seen = new Set();
+  for (const [key, syns] of Object.entries(SYNONYMS)) {
+    // Check key AND all synonym values
+    const all = [key.toLowerCase(), ...syns.map(s => s.toLowerCase())];
+    let matched = false;
+    for (const t of all) {
+      if (t === q || t.includes(q) || q.includes(t)) {
+        matched = true;
+        break;
+      }
+    }
+    if (matched && !seen.has(key)) {
+      seen.add(key);
+      results.push({ key, syns });
+    }
+  }
+  // Sort: exact match first, then shorter key first
+  results.sort((a, b) => {
+    const aExact = a.key.toLowerCase() === q ? 0 : 1;
+    const bExact = b.key.toLowerCase() === q ? 0 : 1;
+    if (aExact !== bExact) return aExact - bExact;
+    return a.key.length - b.key.length;
+  });
+  return results.slice(0, 8);
+}
+
+function showSuggestions(input) {
+  const drop = document.getElementById('suggestDrop');
+  const matches = lookupSuggestions(input);
+  if (!matches.length) { drop.classList.remove('open'); return; }
+
+  let html = '<div class="suggest-label">同义词建议 — 点击替换搜索词</div><div class="suggest-chips">';
+  for (const m of matches) {
+    // Show all unique synonyms as chips
+    const seen = new Set();
+    for (const s of m.syns) {
+      if (seen.has(s)) continue;
+      seen.add(s);
+      const isCN = /[一-鿿]/.test(s);
+      html += `<span class="chip" data-word="${esc(s)}" onclick="selectChip(this)" title="点击搜索「${esc(s)}」">${esc(s)}<span class="chip-lang">${isCN ? '中' : 'EN'}</span></span>`;
+    }
+  }
+  html += '</div>';
+  drop.innerHTML = html;
+  drop.classList.add('open');
+}
+
+function selectChip(chip) {
+  const word = chip.dataset.word;
+  const input = document.getElementById('searchInput');
+  const drop = document.getElementById('suggestDrop');
+  input.value = word;
+  drop.classList.remove('open');
+  searchQuery = word;
+  document.getElementById('clearBtn').classList.add('visible');
+  render();
+  // Don't refocus — stay in content to read results
+}
+
+function hideSuggestions() {
+  document.getElementById('suggestDrop').classList.remove('open');
+}
+
+// ===== SEARCH =====
+let dt;
+document.getElementById('searchInput').addEventListener('input', function() {
+  const val = this.value;
+  clearTimeout(dt);
+  dt = setTimeout(() => {
+    searchQuery = val.trim();
+    document.getElementById('clearBtn').classList.toggle('visible', searchQuery.length > 0);
+    showSuggestions(val);
+    render();
+  }, 150);
+});
+
+document.getElementById('searchInput').addEventListener('focus', function() {
+  if (this.value.trim()) showSuggestions(this.value);
+});
+
+// Click outside to close suggestions
+document.addEventListener('click', function(e) {
+  const wrap = document.querySelector('.suggest-wrap');
+  if (wrap && !wrap.contains(e.target)) hideSuggestions();
+});
+
+document.getElementById('clearBtn').addEventListener('click', function() {
+  document.getElementById('searchInput').value = '';
+  searchQuery = '';
+  this.classList.remove('visible');
+  hideSuggestions();
+  render();
+  document.getElementById('searchInput').focus();
+});
+
+// ===== LANGUAGE =====
+document.getElementById('btnEN').addEventListener('click', function() {
+  this.classList.add('active'); document.getElementById('btnZH').classList.remove('active');
+  currentLang = 'en'; render(); window.scrollTo({top:0,behavior:'smooth'});
+});
+document.getElementById('btnZH').addEventListener('click', function() {
+  this.classList.add('active'); document.getElementById('btnEN').classList.remove('active');
+  currentLang = 'zh'; render(); window.scrollTo({top:0,behavior:'smooth'});
+});
+
+// ===== KEYBOARD =====
+document.addEventListener('keydown', function(e) {
+  if ((e.ctrlKey||e.metaKey) && e.key === 'k') { e.preventDefault(); document.getElementById('searchInput').focus(); }
+  if (e.key === 'Escape') { hideSuggestions(); document.getElementById('searchInput').blur(); }
+});
+
+init();
+</script>
+</body>
+</html>

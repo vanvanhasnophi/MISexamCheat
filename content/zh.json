@@ -1,0 +1,776 @@
+{
+  "meta": {
+    "lang": "zh",
+    "title": "MIS 期末考试知识点速查",
+    "source": "raw/zh.md",
+    "generated": "2026-06-15T11:35:16.424Z"
+  },
+  "sessions": [
+    {
+      "id": "01",
+      "title": "Information Systems Overview",
+      "blocks": [
+        {
+          "title": "IT vs IS",
+          "body": "\n- **Information Technology (IT)**: all hardware and software a firm needs to achieve business objectives. Consists of: computing technology, networking (communication) technology, data management and analytics technology.\n- **Information System (IS)**: a set of interrelated components that collect, process, store, and distribute information to support decision making, coordination, and control.\n- **Data vs Information**: Data = streams of raw facts; Information = data shaped into meaningful form.\n"
+        },
+        {
+          "title": "Functions of an IS",
+          "body": "\nThree basic activities: **Input → Processing → Output**. Feedback is output returned to appropriate people to evaluate and refine the input.\n"
+        },
+        {
+          "title": "MIS (广义/狭义)",
+          "body": "\n- **Narrow sense**: IS that support middle-level management.\n- **Broad sense**: systems built with IT that facilitate management excellence (MIS = IS). Also refers to the disciplinary field.\n"
+        },
+        {
+          "title": "Three Dimensions of IS",
+          "body": "\n1. **Organization**: people, structure, business processes, politics, culture. Hierarchy: Senior → Middle → Operational management; Knowledge workers; Data workers; Production/service workers.\n2. **Management**: managers set organizational strategy, act creatively, create new products/services, occasionally re-create the organization.\n3. **Technology**: hardware/software, data management, networking/telecom. IT infrastructure = platform the system is built on.\n"
+        },
+        {
+          "title": "Six Strategic Business Objectives of IS",
+          "body": "\n1. Operational excellence\n2. New products, services, and business models\n3. Customer and supplier intimacy\n4. Improved decision making\n5. Competitive advantage\n6. Survival\n"
+        },
+        {
+          "title": "Business Perspective on IS",
+          "body": "\n- Investing in IT alone does NOT guarantee good returns.\n- Need: right business model + complementary assets (organizational and management capital).\n- Organization and management dimensions are as important as technology.\n"
+        },
+        {
+          "title": "Digital Firm (数字化转型)",
+          "body": "\nFully digital firm: significant business relationships digitally enabled/mediated; core business processes through digital networks; key corporate assets managed digitally; greater flexibility (time shifting, space shifting).\n"
+        },
+        {
+          "title": "Organization: Technical vs Behavioral Views",
+          "body": "\n- **Technical definition**: formal social structure that processes resources from environment to produce outputs (inputs → production → outputs → feedback loop).\n- **Behavioral definition**: a collection of rights, privileges, obligations, and responsibilities balanced over time through conflict and conflict resolution.\n- Building IS involves more than technical rearrangement — it changes organizational balance.\n"
+        },
+        {
+          "title": "Features of Organizations",
+          "body": "\n- Goals (Strategy)\n- Organizational Structure\n- Business Processes\n- Organizational Politics\n- Organizational Culture\n- Organizational Environments\n"
+        },
+        {
+          "title": "Porter's Five Competitive Forces",
+          "body": "\n1. Traditional competitors\n2. New market entrants\n3. Substitute products and services\n4. Customers\n5. Suppliers\n"
+        },
+        {
+          "title": "Four Competitive Strategies",
+          "body": "\n1. **Low-cost leadership**: produce at lower price than competitors (Walmart, Xiaomi, MXBC)\n2. **Product differentiation**: enable new products/services; mass customization (Google, Apple, DJI)\n3. **Focus on market niche**: specialize in single market niche (Transsion, Fuyao, Pop Mart)\n4. **Strengthen customer and supplier intimacy**: develop loyalty, increase switching costs (Toyota, Amazon, SHEIN)\n"
+        },
+        {
+          "title": "Business Value Chain Model",
+          "body": "\nFirm as series of activities that add value to products/services.\n- **Primary activities** vs **Support activities**\n- At each stage, determine how IS can improve competitive strategy.\n- Utilize benchmarking, industry best practices.\n"
+        },
+        {
+          "title": "Organizational Structures (Mintzberg)",
+          "body": "\n| Type | Description | Examples |\n|:---|:---|:---|\n| Entrepreneurial (创业型) | Young, small firm, fast-changing environment, simple structure | Small start-up |\n| Machine bureaucracy (职能式层级) | Large bureaucracy, slowly changing environment, centralized management | Midsize manufacturing |\n| Divisionalized bureaucracy (事业部式) | Multiple machine bureaucracies, different products, central HQ | Large diversified firms |\n| Professional bureaucracy (专业式) | Knowledge-based, expertise of professionals, weak central authority | Law firms, hospitals |\n| Adhocracy (民主式) | Task force, rapidly changing environment, multidisciplinary teams, weak central management | Consulting firms |\n"
+        },
+        {
+          "title": "Business Processes",
+          "body": "\n- Flows of material, information, knowledge; sets of activities/steps.\n- May be tied to functional area or be cross-functional.\n- **Organizations = Organizational Structures + Business Processes** (类比：程序 = 数据结构 + 算法)\n"
+        },
+        {
+          "title": "Organizational Impacts of IS",
+          "body": "\n- **Goals**: IS may support/enable goals and strategy\n- **Structure**: IS may reinforce or enable more efficient structure\n- **Business Processes**: increase efficiency or enable entirely new processes\n- **Politics**: changes and conflicts\n- **Culture**: changes and conflicts\n- **Environments**: sense and respond\n"
+        },
+        {
+          "title": "Types of Information Systems (by Management Level)",
+          "body": "\n- **Senior Management**: Executive Support Systems (ESS)\n- **Middle Management**: Management Information Systems (MIS), Decision Support Systems (DSS)\n- **Operational Management**: Transaction Processing Systems (TPS)\n"
+        },
+        {
+          "title": "TPS (Transaction Processing Systems)",
+          "body": "\n- Serve operational managers; perform/record daily routine transactions.\n- Examples: sales order entry, payroll, shipping.\n- Serve predefined, structured goals and decision making.\n"
+        },
+        {
+          "title": "MIS (Management Information Systems, 狭义)",
+          "body": "\n- Serve middle management; provide reports on firm's current performance based on TPS data.\n- Answer routine questions with predefined procedure; typically have little analytic capability.\n"
+        },
+        {
+          "title": "DSS (Decision Support Systems)",
+          "body": "\n- Serve middle management; support nonroutine decision making.\n- May use external information as well as TPS/MIS data.\n"
+        },
+        {
+          "title": "ESS (Executive Support Systems)",
+          "body": "\n- Support senior management; address nonroutine decisions requiring judgment, evaluation, insight.\n- Incorporate external events + summarized internal MIS/DSS data.\n- Example: digital dashboard with real-time view of financial performance.\n"
+        },
+        {
+          "title": "Enterprise Applications (四大企业应用)",
+          "body": "\n1. Enterprise systems (ERP)\n2. Supply chain management systems (SCM)\n3. Customer relationship management systems (CRM)\n4. Knowledge management systems (KMS)\n"
+        },
+        {
+          "title": "E-Business / E-Commerce / E-Government",
+          "body": "\n- **E-business**: use of digital technology and Internet to drive major business processes\n- **E-commerce**: subset of e-business; buying and selling goods/services through Internet\n- **E-government**: using Internet technology to deliver information and services to citizens, employees, businesses\n"
+        }
+      ],
+      "ref": null
+    },
+    {
+      "id": "02",
+      "title": "IT Infrastructure in Business Contexts",
+      "blocks": [
+        {
+          "title": "Services Provided by IT Infrastructure",
+          "body": "\nMain: Computing, Telecommunications (Networking), Data management, AI services.\n"
+        },
+        {
+          "title": "Technology Drivers of Infrastructure Evolution",
+          "body": "\n- **Moore's Law**: computing power doubles every 2 years\n- **Law of Mass Digital Storage**: amount of data stored each year doubles\n- **Metcalfe's Law**: value/power of a network grows exponentially with number of members\n- **Declining communication costs** and Internet growth\n- **Standards and network effects**: specifications that establish product compatibility\n"
+        },
+        {
+          "title": "Trends in Computer Platforms",
+          "body": "\nMobile Computing, Consumerization of IT, Quantum Computing, Virtualization, Cloud Computing, Green Computing, GPU Computing, Linux/open source, Software for the Web, Web services/SOA, Software outsourcing/cloud services, AI-empowered software.\n"
+        },
+        {
+          "title": "Key Digital Networking Technologies",
+          "body": "\n- **Client/server computing** (客户机/服务器计算)\n- **Packet switching** (分组交换)\n- **TCP/IP Architecture** (互联网体系架构)\n- **Convergence**: telephone + computer networks → unified digital network\n- **IoT** (物联网): sensors and connected devices\n- **De-centralized networks**: peer-to-peer, agent-to-agent\n"
+        },
+        {
+          "title": "IT Governance",
+          "body": "\nWho controls IT infrastructure? How is IT department organized? How are costs allocated? Tools: TCO model, competitive forces model. Rent-versus-buy. Insourcing/outsourcing/cloud.\n"
+        },
+        {
+          "title": "Database Management Systems (DBMS)",
+          "body": "\n- **Database**: collection of data organized to serve many applications efficiently by centralizing data and controlling redundancy.\n- **DBMS**: software that centralizes data, manages them efficiently, and provides access by application programs.\n- Data represented as two-dimensional tables (rows = records/tuples, columns = fields/attributes).\n- **Primary key**: field that uniquely identifies each record.\n- **Foreign key**: primary key used in second table as look-up field.\n"
+        },
+        {
+          "title": "Emerging Database Forms",
+          "body": "\n- **NoSQL**: more flexible data model, data distributed across machines, easier to scale, handles large volumes of unstructured/structured data.\n- **Vector databases** (向量数据库): stores unstructured data as high-dimensional numerical arrays (embeddings) generated by neural networks; executes semantic similarity search; functions as \"long-term memory\" for Generative AI, powering RAG architectures.\n- **Databases in the cloud**: better respond to real-time demand, keep costs low.\n"
+        },
+        {
+          "title": "Databases and the Web",
+          "body": "\nMulti-tier Server configuration: Web server → Application server/middleware → Database server (DBMS). Advantages: ease of browser use, few/no changes to database, inexpensive to add web interface.\n"
+        },
+        {
+          "title": "Data Warehouse",
+          "body": "\nStores current and historical data from many core operational transaction systems. Consolidates and standardizes information; data cannot be altered. Provides analysis and reporting tools. Features: subject-oriented, multiple dimensions, information summaries and aggregations.\n"
+        },
+        {
+          "title": "Analytical Tools",
+          "body": "\n- **OLAP** (Online Analytical Processing): multidimensional data analysis; Data Cube operations: Slice (切片), Dice (切块), Pivot (旋转), Drill down (下钻), Roll up (上卷).\n- **Data Mining**: finds hidden patterns/relationships. Types: Associations (关联), Sequences (序列), Classification (分类), Clustering (聚类), Forecasting (预测).\n- **Text mining**: extracts key elements from large unstructured data sets; sentiment analysis.\n- **Web mining**: content mining, structure mining, usage mining.\n"
+        },
+        {
+          "title": "Classification & Clustering (典型技术)",
+          "body": "\n- Classification: Decision trees, Neural networks, Support vector machines, Random forests.\n- Clustering: Partial clustering (K-means), Density-based clustering, Hierarchical clustering.\n- Association: Apriori Algorithm based on \"confidence\" (置信度) and \"support\" (支持度).\n"
+        },
+        {
+          "title": "LLM in Business Contexts (四种方法)",
+          "body": "\n1. **Connect to general LLM** — Key: prompt engineering (提示词工程)\n2. **Customized LLM** — Key: fine-tuning (微调)\n3. **Local knowledge + LLM** — Key: RAG (检索增强生成)\n4. **Automatic services** — Key: Contextualized AI agents\n"
+        },
+        {
+          "title": "Data Policy & Data Administration",
+          "body": "\n- **Information policy**: specifies rules for sharing, disseminating, acquiring, standardizing, classifying, inventorying information.\n- **Data administration**: management group establishing policies/procedures to manage data.\n- **Data governance**: organizational structure for managing availability, usability, integrity, security of data.\n- **Database administration**: management group creating and maintaining databases.\n"
+        },
+        {
+          "title": "Security Threats",
+          "body": "\n- **Malware types**: Virus (病毒), Worms (蠕虫), Trojan horse (特洛伊木马), Ransomware (勒索软件), Spyware (间谍软件), Keyloggers (按键窃听器), Code injection (代码注入, e.g., SQL injection, prompt injection).\n- **Hacker attacks**: System intrusion, Spoofing (欺诈), Sniffing (嗅探), DoS/DDoS (拒绝服务攻击), Identity theft (身份窃取), Click Fraud (点击欺骗).\n"
+        },
+        {
+          "title": "Security Tools",
+          "body": "\n- **Identity Management & Authentication**: Passwords, Tokens, Smart cards, Biometric authentication, Two-factor authentication.\n- **Firewalls** (防火墙): combination of hardware/software preventing unauthorized access.\n- **Intrusion Detection Systems** (入侵检测系统)\n- **Antivirus Software**\n- **Encryption**: Symmetric key (single shared key) vs Asymmetric/Public key (two keys: public + private). Digital certificate, Certification Authority (CA), Public Key Infrastructure (PKI).\n- **High-availability Systems**: Redundancy (冗余, no single-failure point) and Backup (备份).\n"
+        },
+        {
+          "title": "Organizational Framework for Security",
+          "body": "\n- **Controls** (控制/内控): General controls (govern design, security, data files) and Application controls (input, processing, output controls).\n- **Security policy** (安全策略): ranking risks, identifying goals, identifying mechanisms. Acceptable Use Policy (AUP).\n- **Auditing** (信息系统审计): review technologies, procedures, documentation, training, personnel; list and rank control weaknesses.\n- **Disaster Recovery Planning** (灾难恢复计划): plans for restoration; Backup and restore.\n- **Business Continuity Planning** (商务连续性计划): continuous operation under predefined circumstances; Redundancy and failover.\n"
+        },
+        {
+          "title": "Cloud Computing Security Issues",
+          "body": "\n- Responsibility resides with company owning data.\n- Firms must ensure: where data stored, meeting legal privacy laws, segregation from other clients, audits/certifications, SLAs.\n"
+        }
+      ],
+      "ref": null
+    },
+    {
+      "id": "03",
+      "title": "Enterprise Applications",
+      "blocks": [
+        {
+          "title": "ERP Evolution: ROP → MRP → MRPII → ERP",
+          "body": "\n- **ROP** (Reorder Point, 订货点法): early inventory management (1940s).\n- **MRP** (Material Requirement Planning): production planning, scheduling, inventory control. Three objectives: Material (ensure availability), Requirement (maintain lowest levels), Plan (plan manufacturing, delivery, purchasing). Based on BOM (Bill of Materials). Limitations: only materials, no capacity constraints, no cost info, poor data integrity.\n- **MRPII** (Manufacturing Resource Planning): extends to all production resources — Money, Manpower, Materials, production capacity. Includes financial planning and \"what-if\" simulation.\n- **ERP** (Enterprise Resource Planning): suite of integrated applications covering Product planning, Manufacturing, Marketing/sales, Inventory, Shipping/payment. Suite of integrated software modules + common central database. Information entered in one process immediately available for other processes.\n"
+        },
+        {
+          "title": "ERP Characteristics",
+          "body": "\n- **Integration**: functional areas are integrated\n- **Centralization**: databases are centralized\n"
+        },
+        {
+          "title": "ERP Implementation",
+          "body": "\n- Built around thousands of predefined business processes reflecting **best practices** (最佳实践).\n- Firms: select functions → conduct **business process re-engineering** (BPR, 业务流程重组) → map business processes to software → use configuration tables for customizing.\n- **Challenges**: conflicts with business strategy, huge investments, conflicts with organizational culture/politics (organizational resistance), loss of flexibility.\n- **Key Success Factors**: organization prepared for change, seen as business imperative, executive leaders active/visible in support, adequate resources, good packaged system, user training, stress the enterprise not the system, general manager as mediator.\n"
+        },
+        {
+          "title": "Major ERP Vendors",
+          "body": "\nSAP, Oracle, Microsoft, Sage/Epicor/Infor, Odoo (opensource), Yonyou (用友), Kingdee (金蝶).\n"
+        },
+        {
+          "title": "Supply Chain",
+          "body": "\n- Network of organizations and processes for procuring materials, transforming into products, distributing products.\n- **Upstream**: suppliers, suppliers' suppliers.\n- **Downstream**: delivering products to customers.\n- **Internal supply chain**.\n"
+        },
+        {
+          "title": "Supply Chain Efficiency",
+          "body": "\n- **Just-in-time** (准时制): components arrive as needed, finished goods shipped after assembly. Requires perfect information.\n- **Safety stock**: buffer for lack of flexibility.\n- **Bullwhip effect** (牛鞭效应): information about product demand gets distorted as it passes from one entity to next across supply chain.\n- **Causes**: uncertain customer orders, delayed replenishment, order batching, price fluctuations, rationing/shortage gaming.\n- **Fundamental problems**: Delay, No collaboration, No information sharing, Poor forecast.\n"
+        },
+        {
+          "title": "Vendor Managed Inventory (VMI)",
+          "body": "\nSupplier manages inventory for the buyer. Example: P&G-Walmart collaboration — P&G monitors Walmart's inventory, auto-replenishes, both reduce costs.\n"
+        },
+        {
+          "title": "Push vs Pull Strategy",
+          "body": "\n- **Push**: work release based on downstream demand forecasts; \"sell what we make\" (efficiency). Problem: forecast uncertainty.\n- **Pull**: work release based on actual demand; \"make what we sell\" (responsiveness). Problem: delayed information.\n- **Push-Pull Hybrid**: early stages push (aggregated forecasts), final production pull (actual demand). Trade-off via **Decoupling Points (DP)**.\n- **Functional products**: stable, predictable demand, long life cycles, low margins → efficiency focus.\n- **Innovative products**: unpredictable demand, short life cycles, high variety → responsiveness focus.\n"
+        },
+        {
+          "title": "SCM Systems",
+          "body": "\n- **Supply chain planning systems**: model supply chain, demand planning, optimize sourcing/manufacturing, establish inventory levels.\n- **Supply chain execution systems**: manage flow through distribution centers/warehouses.\n"
+        },
+        {
+          "title": "CRM (Customer Relationship Management)",
+          "body": "\nIntegrated system for identifying, acquiring, maintaining customers; supporting marketing, sales, and service.\n\nThree functional types:\n- **Operational CRM**: customer-facing applications (SFA, call center, marketing automation).\n- **Analytical CRM**: based on data warehouses; analyzes customer data (OLAP, data mining); Customer Lifetime Value (CLTV).\n- **Collaborative CRM**: collects, organizes, shares customer data across teams; unified messaging; interaction/channel/document management.\n"
+        },
+        {
+          "title": "CRM Trends",
+          "body": "\nSocial media for inbound marketing, Cloud/SaaS CRM (Salesforce), Mobile/IoT data, Integration with ERP/SCM (Total Life Cycle Immersive Marketing).\n"
+        },
+        {
+          "title": "CRM Paradox",
+          "body": "\n\"Dark side of CRM\" — differential treatment of customers may cause perceptions of unfairness (e.g., Amazon dynamic pricing).\n"
+        }
+      ],
+      "ref": null
+    },
+    {
+      "id": "04",
+      "title": "e-Commerce, Knowledge Management, and Decision Making",
+      "blocks": [
+        {
+          "title": "Why e-Commerce is Different (Digital Markets Features)",
+          "body": "\n- **Ubiquity**: marketspace is virtual, transaction costs reduced\n- **Global reach**: transactions cross cultural/national boundaries\n- **Universal standards**: Internet standards\n- **Richness**: video, audio, text messages\n- **Interactivity**: information density, price/cost transparency, price discrimination\n- **Personalization/customization**: technology permits modification of messages/goods\n- **Social technology**: user content generation, social networking\n"
+        },
+        {
+          "title": "Digital Markets Are Different",
+          "body": "\n- **Disintermediation** (去中介化): removing intermediary layers lowers final cost.\n- **Two-sided Markets** (双边市场): technology enables new forms of connecting different users to create value (Google, Facebook, Taobao, Uber, AirBnB...).\n"
+        },
+        {
+          "title": "Digital Goods",
+          "body": "\nThree categories: (1) Information products (e-books, news, music...), (2) Symbols and data records (tickets, financial instruments...), (3) Services (messaging, transactions, entertainment...).\n\nProperties:\n- Physical: Non-depletion (无损耗性), Variable (可变性), Replicable (可复制性)\n- Economic: Individualized value (个性化价值偏好), Network externalities (网络外部性), Economy of scale (规模经济性)\n"
+        },
+        {
+          "title": "New Possibilities with Digital Goods",
+          "body": "\n- **Personalization and Long-tail** (长尾): 80/20 rule vs long tail; information goods are variable, variable costs negligible, storage/delivery costs low, powerful search/recommendation.\n- **Differential pricing** (区别定价): First degree (individual), Second degree (versioning, bulk discounts), Third degree (group pricing).\n- **Bundling** (捆绑销售): complementarity, competition for markets, reshaping demand curve.\n- **Subscription** (订阅): from discrete products to continuous access; lock-in effect, switching costs, maximizing CLV.\n"
+        },
+        {
+          "title": "e-Commerce Types",
+          "body": "\n- B2C, B2B, C2C, Hybrid.\n- Traditional (PC-Websites) vs Mobile commerce (Mobile-Apps).\n- **Business models**: Portal, E-tailer, Content provider, Transaction broker, Market creator, Service provider, Community provider.\n- **Revenue models**: Advertising, Sales, Subscription, Free/Freemium, Transaction fee, Affiliate.\n"
+        },
+        {
+          "title": "China Digital Platform Evolution",
+          "body": "\n- Stage I (late 1990s-early 2000s): Four basic functional types developed in parallel\n- Stage II (~2005-2015): Social media (fusion of communication + content) — Weibo, WeChat\n- Stage III (~2015-now): Social commerce (fusion of social media + commerce) — WeChat commerce, live-streaming\n- Stage IV (current): Fusion of social commerce + supply chain coordination\n"
+        },
+        {
+          "title": "Knowledge Management",
+          "body": "\n- **Explicit Knowledge**: knowledge that has been documented (structured, semi-structured, unstructured).\n- **Tacit Knowledge**: knowledge in minds of employees, not documented. Solutions: Communities of Practice (CoP), AI involvement.\n"
+        },
+        {
+          "title": "Major Types of Knowledge Management Systems",
+          "body": "\n1. **Enterprise-wide KM**: ECM systems, digital asset management, collaboration tools (blogs, wikis). Key problem: developing taxonomy. Alternative: tagging, search engines.\n2. **Knowledge Work Systems**: for researchers, designers, scientists, engineers. CAD, VR/AR, collaboration systems.\n3. **Intelligent Techniques**: Expert systems (rule-based, fuzzy logic), Case-based reasoning, Machine learning (neural networks, genetic algorithms, LLMs), Intelligent agents.\n"
+        },
+        {
+          "title": "LLM in KM Challenges",
+          "body": "\n- Hallucination (幻觉)\n- Data Privacy and Security\n- Dynamic Access Control\n- Cost and Maintenance\n"
+        },
+        {
+          "title": "Types of Decisions",
+          "body": "\n- **Structured**: repetitive/routine, definite procedure, can be automated → \"High-Velocity Automated Decision Making\"\n- **Semistructured**: only part has clear-cut answer, IS may provide analysis support\n- **Unstructured**: requires judgment/evaluation/insight, IS may provide analysis support\n"
+        },
+        {
+          "title": "Four Kinds of Decision Support Systems",
+          "body": "\n- Operational/Middle: MIS, DSS\n- Senior Management: ESS\n- Group: GDSS (Group Decision Support Systems)\n"
+        },
+        {
+          "title": "BI and Analytics Capabilities",
+          "body": "\n- Production reports, Parameterized reports, Dashboards/scorecards, Ad hoc query/search/report, Drill down/roll up, Forecasts/scenarios/models.\n"
+        },
+        {
+          "title": "Evolution: Generative BI",
+          "body": "\n- From static dashboards to conversational analytics.\n- Natural Language Querying (Text-to-SQL).\n- AI Agents as Data Analysts.\n- Democratization of Data.\n"
+        },
+        {
+          "title": "Data-Driven vs Model-Driven Decision Making",
+          "body": "\n- **Traditional BI (Data-Driven)**: Descriptive & Diagnostic; dashboards, historical reports; human processes data with intuition.\n- **Modern AI/Agentic BI (Model-Driven)**: Predictive & Prescriptive; scenario simulations, algorithmic recommendations, autonomous actions; human does strategic oversight.\n"
+        }
+      ],
+      "ref": null
+    },
+    {
+      "id": "05",
+      "title": "Building and Managing Information Systems",
+      "blocks": [
+        {
+          "title": "Systems Development and Organizational Change (四种变革)",
+          "body": "\n1. **Automation** (自动化): increases efficiency, replaces manual tasks.\n2. **Rationalization** (合理化): streamlines standard operating procedures.\n3. **Business process redesign** (BPR, 业务流程重组): analyze, simplify, redesign business processes; reorganize workflow, combine steps, eliminate repetition.\n4. **Paradigm shifts** (模式转换): rethink nature of business, define new business model, change nature of organization.\n"
+        },
+        {
+          "title": "Business Process Management (BPM)",
+          "body": "\nVariety of tools and methodologies to analyze, design, optimize processes. BPR steps: Identify processes for change → Analyze existing processes → Design new process → Implement → Continuous measurement.\n"
+        },
+        {
+          "title": "Core Activities in Systems Development",
+          "body": "\n| Activity | Description |\n|:---|:---|\n| Systems analysis | Identify problems, specify solutions, establish information requirements |\n| Systems design | Create design specifications |\n| Programming | Translate design specifications into program code |\n| Testing | Unit testing, systems testing, acceptance testing |\n| Conversion | Plan conversion, prepare documentation, train users/technical staff |\n| Production and maintenance | Operate, evaluate, modify the system |\n"
+        },
+        {
+          "title": "Systems Analysis",
+          "body": "\n- Analysis of problem: defining problem, identifying causes, process modeling (as-is).\n- Specifying solutions: identifying information requirements, process modeling (to-be).\n- Feasibility study → Systems proposal report.\n"
+        },
+        {
+          "title": "Systems Design",
+          "body": "\nDescribes system specifications delivering functions identified during analysis. Addresses all managerial, organizational, technological components. **Insufficient user involvement is a major cause of system failure.**\n"
+        },
+        {
+          "title": "Testing",
+          "body": "\n- **Unit testing**: tests each program separately.\n- **System testing**: tests functioning of system as a whole.\n- **Acceptance testing**: ensures system is ready for production use.\n- **Test plan**: all preparations for series of tests.\n"
+        },
+        {
+          "title": "Conversion Strategies (四种切换策略)",
+          "body": "\n1. **Parallel strategy**: old and new run simultaneously\n2. **Direct cutover**: immediate switch\n3. **Pilot study**: test in one area first\n4. **Phased approach**: gradual roll-out\n"
+        },
+        {
+          "title": "Production and Maintenance",
+          "body": "\nMaintenance breakdown: ~20% debugging/emergency, ~20% hardware/software/data changes, ~60% user enhancements/documentation improvement/recoding.\n"
+        },
+        {
+          "title": "Methodologies vs Approaches",
+          "body": "\n- **Methodologies**: methods for modeling and designing systems. Two alternatives: (1) Structured methodologies; (2) Object-oriented development.\n- **Approaches**: methods for organizing core activities. Five alternatives: (1) Traditional systems life cycle; (2) Prototyping; (3) Application software packages; (4) End-user development; (5) Outsourcing.\n"
+        },
+        {
+          "title": "Structured Methodologies",
+          "body": "\n- Step-by-step, progressive, process-oriented.\n- Separate data from processes.\n- Tools: ER diagram (ERD), Data flow diagram (DFD), Structure chart.\n"
+        },
+        {
+          "title": "Object-Oriented Development",
+          "body": "\n- Basic unit: **Object** — combines data and processes that operate on those data.\n- Based on concepts of **class** and **inheritance**.\n- More iterative and incremental; objects are reusable.\n"
+        },
+        {
+          "title": "CASE (Computer-Aided Software Engineering)",
+          "body": "\nSoftware tools to automate development: graphics, screen/report generators, analysis/checking tools, data dictionaries, code/documentation generators. Standard: UML.\n"
+        },
+        {
+          "title": "Approaches to Systems Development",
+          "body": "\n| Approach | Description | Pros | Cons |\n|:---|:---|:---|:---|\n| Traditional SDLC (Waterfall) | Phased, one stage finishes before next; formal division of labor | Structured, good for large complex systems | Costly, time-consuming, inflexible |\n| Prototyping | Build experimental system rapidly for user evaluation | Good for uncertain requirements, fulfills user needs | May gloss over essential steps, may not scale |\n| End-User Development | End users develop simple systems with little technical help | Rapid completion, high user involvement | Not for processing-intensive, inadequate management/control |\n| Application Software Packages | Save time/money; customization features | Fast, proven | May not fit all needs, organizational change required |\n| Outsourcing | Cloud/SaaS, external vendors; domestic (skills/resources) or offshore (cost-savings) | Access to expertise, potential cost savings | Hidden costs, exposing proprietary processes |\n"
+        },
+        {
+          "title": "Project Risk Dimensions",
+          "body": "\n- **Project size** (costs, time, organizational units affected)\n- **Organizational complexity**\n- **Project structure** (structured, defined requirements = lower risk)\n- **Experience with technology**\n"
+        },
+        {
+          "title": "Change Management",
+          "body": "\n- Very high failure rate (up to 70% for BPR projects).\n- Challenges: employee concerns, resistance by key managers, changing job functions, user-designer communication gap.\n- **Change agent** (变革代理人): one role of systems analyst — redefines configurations, interactions, job activities, power relationships.\n"
+        },
+        {
+          "title": "Cost-Benefit Analysis",
+          "body": "\n- **Tangible benefits**: quantifiable, monetary value (increased productivity, lower costs, reduced workforce).\n- **Intangible benefits**: cannot be immediately quantified (better customer service, enhanced decision making).\n- TPS → more tangible benefits; MIS/DSS/ESS → more intangible benefits.\n"
+        },
+        {
+          "title": "Capital Budgeting Models",
+          "body": "\n- Payback method (回收期法)\n- Accounting rate of return on investment (ROI, 投资回报率)\n- Net present value (净现值)\n- Internal rate of return (IRR, 内部收益率)\n- Limitations: focus on financial/technical aspects; overlook social/organizational dimensions, organizational disruptions, intangible benefits.\n"
+        },
+        {
+          "title": "Risk Control Tools",
+          "body": "\n- **Internal integration tools**: experienced team, frequent meetings, technical expertise.\n- **Formal planning and control tools**: Gantt charts (timing/duration of tasks, human resource requirements), PERT charts (tasks and interrelationships, sequence, critical path, slack time).\n- **External integration tools**: link implementation team to users; strategies to overcome user resistance (participation, education/training, incentives, UI improvement).\n"
+        }
+      ],
+      "ref": null
+    },
+    {
+      "id": "06",
+      "title": "Systems Analysis Fundamentals",
+      "blocks": [
+        {
+          "title": "Systems Analysis and Design",
+          "body": "\nTo analyze, design, and implement improvements through computerized IS, in support of users and business functioning. Purpose: align systems with business targets, structure/guide development, involve users.\n"
+        },
+        {
+          "title": "Key Failure Cases",
+          "body": "\n| Case | Key Flaw |\n|:---|:---|\n| Lidl SAP (€500M) | Inadequate requirements (purchase vs retail price logic); Refusal to re-engineer processes (massive customizations) |\n| Moutai Data Middle Platform | Ignored organizational culture (SOE vs internet-style); Over-centralization without fallback; Excluded middle-level managers |\n| MissFresh SCM Bankruptcy | Underestimated demand volatility (spoilage >30%); No margin-aware cost modeling; Technical feasibility over economic feasibility |\n"
+        },
+        {
+          "title": "Three Roles of Systems Analyst",
+          "body": "\n1. **Consultant** (外部顾问): \"I can tell you what to build.\"\n2. **Supporting Expert** (内部专家): \"I'll help you build it right.\"\n3. **Agent of Change** (变革代理): \"How can we make sure this gets done?\"\n"
+        },
+        {
+          "title": "Systems Analyst Qualities",
+          "body": "\nProblem solver, Communicator, Strong personal and professional ethics, Self-disciplined and self-motivated.\n"
+        },
+        {
+          "title": "Three Development Methodologies",
+          "body": "\n1. **SDLC** (Systems Development Life Cycle): phased approach with specific cycle of analyst and user activities.\n2. **Agile approach**: interactive, incremental, frequent iterations.\n3. **Object-Oriented Systems Analysis and Design**: facilitates rapid change in dynamic environments; uses UML.\n"
+        },
+        {
+          "title": "SDLC Phases",
+          "body": "\n1. **Identifying Problems, Opportunities, and Objectives** → Feasibility report\n2. **Determining Information Requirements** → Understanding of user work and business functions\n3. **Analyzing System Needs** → System proposal (using DFD, data dictionary, structured decision analysis)\n4. **Designing the Recommended System** → Model of actual system\n5. **Developing and Documenting Software** → Programs + system documentation\n6. **Testing and Maintaining the System** → Problems identified, updated programs\n7. **Implementing and Evaluating the System** → Trained personnel, installed system\n"
+        },
+        {
+          "title": "Agile Approach Phases",
+          "body": "\nExploration → Planning → Iterations to First Release (testing, feedback, change) → Productionizing → Maintenance.\n"
+        },
+        {
+          "title": "Three Modeling Tools (三种建模工具)",
+          "body": "\n- **Context-level DFD** (数据流图, 动态建模): data flows into/out of system, processing of data.\n- **Entity-Relationship Model** (ERD, 静态建模): entities and their relationships.\n- **Use Case Modeling** (用例图, 功能建模): what a system does without describing how it works.\n"
+        },
+        {
+          "title": "DFD Basic Elements",
+          "body": "\n- **Process**: action or group of actions taking place.\n- **Entity**: person, group, department, or system that receives or originates information.\n- **Data flow**: information being passed from or to a process.\n"
+        },
+        {
+          "title": "ERD Relationships",
+          "body": "\nThree types: One-to-one, One-to-many, Many-to-many.\n"
+        },
+        {
+          "title": "Use Case Diagram Elements",
+          "body": "\n- **Actor**: particular role of a user (exists outside system).\n- **Use case**: oval indicating the task.\n- **Connecting lines**: arrows and lines for behavioral relationships.\n"
+        },
+        {
+          "title": "Four Types of Use Case Behavioral Relationships",
+          "body": "\n| Relationship | Symbol | Meaning |\n|:---|:---|:---|\n| Communicates | Line (no arrowheads) | Actor connected to use case |\n| Includes | `<< include >>` | Common behavior; arrow points to common use case |\n| Extends | `<< extend >>` | Handles exceptions; arrow points from extended to basic use case |\n| Generalizes | Arrow to general thing | One thing is more general than another |\n"
+        },
+        {
+          "title": "Use Case Scenario",
+          "body": "\nDescription of the use case covering: identifiers and initiators, steps performed, conditions/assumptions/questions.\n"
+        },
+        {
+          "title": "Project Management Tools",
+          "body": "\n- **Work Breakdown Structure**: decomposition (product-oriented or process-oriented).\n- **Time Estimation**: relying on experience, analogies, three-point estimation, function points, COCOMO II.\n- **Gantt Charts**: simple, good for end-user communication, drawn to scale.\n- **PERT Diagrams**: useful when activities can be done in parallel; identifies critical path, slack time, order of precedence.\n"
+        }
+      ],
+      "ref": null
+    },
+    {
+      "id": "07",
+      "title": "Information Gathering",
+      "blocks": [
+        {
+          "title": "Interactive Methods (交互式方法)",
+          "body": "\n1. **Interviewing**: reveals opinions, feelings, goals, HCI concerns.\n2. **Joint Application Design (JAD)**: replaces series of interviews with group setting; saves time, rapid development, improved user ownership.\n3. **Questionnaires**: scale, quantify, prioritize, segment; provide quantitative backbone for evidence-based design.\n"
+        },
+        {
+          "title": "Interview Question Types",
+          "body": "\n- **Open-ended**: \"What's your opinion of...\"\n- **Closed**: \"How many times a week...\"\n- **Bipolar**: \"Do you agree or disagree that...\"\n- **Probes**: \"Why?\", \"Give an example...\"\n"
+        },
+        {
+          "title": "Question Arrangement Structures",
+          "body": "\n- **Pyramid** (Closed → Open): warms up reluctant interviewees.\n- **Funnel** (Open → Closed): when interviewee feels emotional.\n- **Diamond** (Closed → Open → Closed): combines both strengths, takes longer.\n"
+        },
+        {
+          "title": "Interview Closing",
+          "body": "\nAlways ask \"Is there anything else?\", summarize/feedback, ask who to talk with next, set up future appointments, thank them.\n"
+        },
+        {
+          "title": "Unobtrusive Methods (无干扰方法)",
+          "body": "\nTechniques for gathering information without direct stakeholder interaction. Reveal actual vs stated processes, identify hidden patterns, complement interviews/JAD with objective evidence.\n"
+        },
+        {
+          "title": "Major Unobtrusive Methods",
+          "body": "\n- **Sampling**: Simple Random, Stratified (分 subgroups), Systematic (every k-th), Purposive (hand-pick informative cases).\n- **Quantitative Document Analysis**: extract numerical patterns (error rates, completion times).\n- **Qualitative Document Analysis**: understand context, meaning, narratives (tone, recurring themes, blame patterns).\n- **Text Analytics**: mine unstructured feedback (concept frequency, sentiment, co-occurrence).\n- **Observation (Playscript)**: record decision-maker actions in real-time (who, action, information activity).\n- **STROBE** (Structured Observation of the Environment): 7 elements — workspace, digital-tool placement, storage, props, external sources, lighting/color, clothing/appearance. Symbols: ✓ confirmed, X reversed, ◇ look further, □ supplemented.\n"
+        },
+        {
+          "title": "Requirements-Specification Document Contents",
+          "body": "\nProject overview, Stakeholder analysis, Functional requirements (prioritized use cases), Non-functional requirements, Business rules, Data requirements, Assumptions & constraints.\n"
+        }
+      ],
+      "ref": null
+    },
+    {
+      "id": "08",
+      "title": "Process Modeling (I)",
+      "blocks": [
+        {
+          "title": "Prototyping Types (四种原型)",
+          "body": "\n1. **Patched-up** (拼凑型): works but inefficient; all features but rough implementation.\n2. **Nonoperational** (非操作原型): nonworking scale model for testing certain design aspects.\n3. **First-of-a-series** (首系列/示范原型): pilot, completely operational, used when many installations planned.\n4. **Selected features** (选择性功能原型): some essential features only, built in modules, part of actual system.\n"
+        },
+        {
+          "title": "Agile Modeling Values & Principles",
+          "body": "\nValues: Communication, Simplicity, Feedback, Courage.\nKey principles: satisfy customer through working software, embrace change, deliver incrementally/frequently, daily customer-analyst collaboration, trust motivated individuals, face-to-face conversation, sustainable development, self-organizing teams, rapid feedback.\n"
+        },
+        {
+          "title": "Scrum Framework",
+          "body": "\nIterative approach with time-boxed **Sprints** (冲刺).\n\n- **Roles**: Product Owner (产品负责人), Scrum Master (Scrum主管), Developers.\n- **Artifacts**: Product Backlog, Sprint Backlog, Increment.\n- **Events**: Sprint Planning, Daily Scrum (15 min stand-up), Sprint Review (demo to stakeholders), Sprint Retrospective (process improvement).\n- Foundations: Transparency (透明), Inspection (检视), Adaptation (调适).\n"
+        },
+        {
+          "title": "DevOps",
+          "body": "\nPractices, cultural philosophies, tools that automate and integrate processes between software development and IT teams.\n"
+        },
+        {
+          "title": "Data Flow Diagrams (DFD)",
+          "body": "\nGraphically characterize data processes and flows. Advantages: no early commitment to technical implementation, understanding interrelatedness of systems/subsystems, communicating system knowledge to users, analyzing proposed system.\n"
+        },
+        {
+          "title": "DFD Basic Rules",
+          "body": "\n- Must have at least one process.\n- No freestanding objects.\n- Process must have both input and output data flow.\n- Data store must be connected to at least one process.\n- External entities should not be connected to one another.\n"
+        },
+        {
+          "title": "DFD Top-Down Development",
+          "body": "\n1. List business activities → determine External entities, Data flows, Processes, Data stores.\n2. Create **Context Diagram** (highest level, one process \"0\", all external entities and major data flows).\n3. Draw **Diagram 0** (explosion of context, up to 9 processes, major data stores, all external entities).\n4. Create **Child Diagrams** (each process on diagram 0 may explode; child diagram number = parent process number).\n5. Check for errors.\n6. Develop physical DFD from logical DFD.\n7. Partition the physical DFD.\n"
+        },
+        {
+          "title": "Logical vs Physical DFD",
+          "body": "\n| Feature | Logical | Physical |\n|:---|:---|:---|\n| Depicts | How business operates | How system will be implemented |\n| Processes | Business activities | Programs, modules, manual procedures |\n| Data stores | Collections of data (regardless of storage) | Physical files/databases, manual files |\n| System controls | Business controls | Validation, record status, system security |\n"
+        },
+        {
+          "title": "From Logical to Physical DFD",
+          "body": "\n1. Derive logical DFD for current system by examining physical DFD and isolating unique business activities.\n2. Create logical DFD for new system by adding required input/output/processes.\n3. Derive physical DFD by examining new logical diagram processes.\n"
+        },
+        {
+          "title": "CRUD",
+          "body": "\nCreate, Read, Update, Delete — activities that must be present for each master file. Use CRUD matrix to show where each operation occurs.\n"
+        },
+        {
+          "title": "Event Modeling",
+          "body": "\nInput flow from external entity = **trigger** (starts process activities). Create DFD fragment for each unique system event. Use **Event Response Tables**: Event, Source, Trigger, Activity, Response, Destination.\n"
+        },
+        {
+          "title": "Partitioning",
+          "body": "\nDividing DFDs into collections of manual procedures and computer programs. Purposes: Different user groups, Timing, Similar tasks, Efficiency, Consistency of data, Security.\n"
+        }
+      ],
+      "ref": null
+    },
+    {
+      "id": "09",
+      "title": "Process Modeling (II)",
+      "blocks": [
+        {
+          "title": "Data Dictionary",
+          "body": "\nA reference work of data about data (metadata). Categories: Data flows, Data structures, Elements, Data stores.\n"
+        },
+        {
+          "title": "Data Flow Definition",
+          "body": "\nID, Unique descriptive name, General description, Source, Destination, Type of data flow, Name of data structure, Volume per unit time, Comments.\n"
+        },
+        {
+          "title": "Data Structure Notation",
+          "body": "\n- `=` means \"is composed of\"\n- `+` means \"and\"\n- `{}` repetitive elements\n- `[]` either/or situation\n- `()` optional element\n"
+        },
+        {
+          "title": "Data Element Fields",
+          "body": "\nElement ID, Name, Aliases, Description, Base or derived, Length, Data type, Input/output formats, Validation criteria, Default value.\n"
+        },
+        {
+          "title": "Data Store Fields",
+          "body": "\nID, Name, Alias, Description, File type, File format, Max/average record count & growth/year, File/data set name, Data structure, Primary/secondary keys.\n"
+        },
+        {
+          "title": "Process Specifications (Minispecs)",
+          "body": "\nCreated for primitive processes. Goals: Reduce ambiguity, obtain precise description, validate system design. Elements: Process number, Process name, Description, Input/output data flows, Type of process, Process logic description, Logic method reference, Unresolved issues.\n"
+        },
+        {
+          "title": "Three Logic Description Methods",
+          "body": "\n#### 1. Structured English (结构化自然语言)\n\n- Used for formulas, iteration, or non-complex structured decisions.\n- Structures: Sequential, Decision (IF-THEN-ELSE), Case, Iteration (DO WHILE).\n\n#### 2. Decision Tables (决策表)\n\nFour quadrants: Conditions, Condition alternatives, Actions, Rules.\nCheck for: Incompleteness, Impossible situations, Contradictions, Redundancy.\n\n#### 3. Decision Trees (决策树)\n\nUsed when complex branching or when sequence of conditions is critical. Built left to right.\n"
+        },
+        {
+          "title": "Choosing a Structured Decision Analysis Technique",
+          "body": "\n- **Structured English**: many repetitious actions, communication to end users important.\n- **Decision tables**: complex combination of conditions/actions/rules, need to avoid impossible situations/redundancies/contradictions.\n- **Decision trees**: sequence of conditions/actions is critical, not every condition relevant to every action.\n"
+        }
+      ],
+      "ref": null
+    },
+    {
+      "id": "10",
+      "title": "Object-Oriented Systems Analysis and Design",
+      "blocks": [
+        {
+          "title": "OO Concepts",
+          "body": "\n- **Object** (对象): persons, places, or things relevant to the system. Consists of structure (attributes) + behavior (methods).\n- **Class** (类): defines shared attributes and behaviors found in each object. Instantiate = object created from class.\n- **Inheritance** (继承): derived class inherits all attributes and behaviors of base class. Reduces programming labor. Only in OO systems.\n"
+        },
+        {
+          "title": "UML Components",
+          "body": "\n- **Things**: Structural (classes, interfaces, use cases...), Behavioral (interactions, state machines), Group (boundaries), Annotation (notes).\n- **Relationships**: Structural (dependencies, aggregations, associations, generalizations), Behavioral (communicates, includes, extends, generalizes).\n- **Diagrams**: Structural (class, object, component, deployment) and Behavioral (use case, sequence, collaboration, statechart, activity).\n"
+        },
+        {
+          "title": "UML Diagrams Overview",
+          "body": "\n| Diagram | Purpose |\n|:---|:---|\n| Use Case Diagram | What the system does (no how) — starting point |\n| Activity Diagram | Overall flow of activities, sequential/parallel, decisions |\n| Sequence Diagram | Interactions between classes/objects over time |\n| Communication Diagram | Same as sequence but emphasizes object organization |\n| Class Diagram | Static features, class relationships, data storage requirements |\n| Statechart Diagram | Different states an object may have |\n"
+        },
+        {
+          "title": "Use Case Diagram (review)",
+          "body": "\nActor, Use case (oval), Connecting lines. Four behavioral relationships: Communicates, Includes, Extends, Generalizes.\n"
+        },
+        {
+          "title": "Activity Diagram Symbols",
+          "body": "\nRectangle (rounded ends) = activity, Arrow = flow, Diamond = decision, Long flat rectangle = synchronization, Filled circle = start, Black circle in white = end, Swimlanes = roles.\n"
+        },
+        {
+          "title": "Sequence Diagram Layers",
+          "body": "\n1. **Presentation layer**: what user sees (interface/boundary classes)\n2. **Business layer**: unique rules for this application (control classes)\n3. **Persistence/data access layer**: obtaining/storing data (entity classes)\n"
+        },
+        {
+          "title": "Class Diagram: Types of Classes",
+          "body": "\n- **Entity classes**: real-world items (like ERD entities)\n- **Interface/boundary classes**: means for users to work with system\n- **Abstract classes**: linked to concrete classes in generalization/specialization; cannot be directly instantiated\n- **Control classes**: control flow of activities\n"
+        },
+        {
+          "title": "Relationships in Class Diagrams",
+          "body": "\n- **Associations**: simplest type\n- **Whole/part**: Aggregation (whole = sum of parts), Collection (members may change), Composition (whole has responsibility for parts).\n- **Association classes**: break up many-to-many associations.\n"
+        },
+        {
+          "title": "Statechart Diagrams",
+          "body": "\nUsed when: class has complex life cycle, instance may update attributes in many ways, class has operational life cycle, two classes depend on each other, object's current behavior depends on prior events.\n"
+        },
+        {
+          "title": "UML Steps",
+          "body": "\nDefine use case model → Continue UML diagramming during analysis → Develop class diagrams → Draw statechart diagrams → Begin design by refining UML → Document system design in detail.\n"
+        }
+      ],
+      "ref": null
+    },
+    {
+      "id": "11",
+      "title": "Designing Output and Input",
+      "blocks": [
+        {
+          "title": "MVC Pattern",
+          "body": "\nView → Controller → Model → View (用户点击 → 控制器 → 创建/更新模型 → 更新视图).\n"
+        },
+        {
+          "title": "Output Rules",
+          "body": "\n1. **Choose the right output method (medium)**: Displays/Dashboards, Audio/Podcasts, Mobile/Tablets, Printers/Hard Copy — each with distinct advantages.\n2. **Keep it simple and uncluttered**: single screen, meaningful grouping, summarize over raw data.\n3. **Neutralize output bias**: sorting bias, graphical bias, truncation bias, aggregation bias.\n4. **Provide context alongside summarization**: number without context is just a number.\n"
+        },
+        {
+          "title": "Output Methods",
+          "body": "\n| Medium | Best For |\n|:---|:---|\n| Displays/Dashboards | Interactive, real-time, dynamic data |\n| Audio/Podcasts | Hands-free, transient messages |\n| Mobile/Tablets | On-the-go data consumption |\n| Printers/Hard Copy | Archival, regulatory compliance |\n"
+        },
+        {
+          "title": "Input Rules",
+          "body": "\n1. **Choose the right input method (Medium)**: Keyboard, Voice, Barcode/QR, Touch/Gesture.\n2. **Ensure accurate completion**: smart navigation, defaults, validation.\n3. **Follow natural flow**: top-down, left-right.\n4. **Use proper GUI control for the data type**.\n"
+        }
+      ],
+      "ref": null
+    },
+    {
+      "id": "12",
+      "title": "Designing Databases and Human-Computer Interaction",
+      "blocks": [
+        {
+          "title": "Reality → Data → Metadata",
+          "body": "\nReality (a student) → Data (row in table) → Metadata (table schema: column names, types).\n"
+        },
+        {
+          "title": "E-R Diagram to Relational Schema",
+          "body": "\nE-R Diagram (conceptual) → Relational Schema (logical, tables with keys).\n"
+        },
+        {
+          "title": "Normalization (规范化)",
+          "body": "\nThree anomalies: **Update** (phone only updated in one row), **Insert** (can't add customer without order), **Delete** (last order gone → customer gone).\n\nNormalization = eliminating multiple copies of one truth.\n\n| Form | Rule | Plain Meaning |\n|:---|:---|:---|\n| 1NF | Atomic values, no repeating groups | One cell, one fact |\n| 2NF | 1NF + no partial dependency on composite key | Don't mix two things in one table |\n| 3NF | 2NF + no transitive dependency | Non-key attributes depend on the key only |\n\nPractice: Aim for 3NF by default. Normalize for correctness, denormalize for performance. Document both.\n"
+        },
+        {
+          "title": "OLTP vs OLAP",
+          "body": "\n| | OLTP (Operational) | OLAP (Analytical) |\n|:---|:---|:---|\n| Purpose | Run the business | Understand the business |\n| Focus | Consistency | Analyzability |\n| Workload | Many small transactions | Few large queries |\n| Schema | Normalized (2NF-3NF) | Denormalized |\n| Example | Place an order | Which products grew 30% YoY? |\n"
+        },
+        {
+          "title": "NoSQL Database Types",
+          "body": "\n| Type | Example | Gains |\n|:---|:---|:---|\n| Key-Value | Redis, DynamoDB | Brutal speed |\n| Document | MongoDB | Flexible nested data |\n| Column-Family | Cassandra, HBase | Massive write scale |\n| Graph | Neo4j | Native relationship traversal |\n"
+        },
+        {
+          "title": "Vector Databases (向量数据库)",
+          "body": "\nStore MEANING as COORDINATES, not text. Neural network (embedding model) learns coordinates. Similar meaning → close distance (cosine similarity). Traditional DB: find by exact number; Vector DB: find by position on a semantic map. Tools: Pinecone, Weaviate/Milvus, ChromaDB, pgvector.\n"
+        },
+        {
+          "title": "Database Summary",
+          "body": "\n- **OLTP**: Relational, normalized (2NF-3NF)\n- **OLAP**: Relational, denormalized\n- **Fast/flexible access**: NoSQL\n- **Semantic search/AI retrieval**: Vector databases\n"
+        },
+        {
+          "title": "HCI: The Mouth and Ears of the System",
+          "body": "\nDesigning for HCI = ensuring system functionality/usability, providing effective user interaction support, enhancing pleasant user experience. **Fit between human, computer, and task.**\n"
+        },
+        {
+          "title": "Types of User Interfaces",
+          "body": "\nNatural-language, Question-and-answer, Menus, Form-fill, Command-language (CLIs), Graphical User Interfaces (GUIs), Web interfaces. Not mutually exclusive — usually combined.\n"
+        },
+        {
+          "title": "Seven Types of Feedback",
+          "body": "\n1. Accepting input: \"I heard you\"\n2. Recognizing task: \"I understand what you want\"\n3. Producing more information: \"I need more from you\"\n4. Accepting/processing: \"Working on it...\" (spinner, progress)\n5. Rejecting input: \"I can't do that\" (with WHY)\n6. Communicating delay: \"This is taking a while\" (estimated time)\n7. Completing task: \"Done. Here's the result.\"\n"
+        },
+        {
+          "title": "The AI Era in HCI",
+          "body": "\n| Era | User must... | System provides... |\n|:---|:---|:---|\n| Traditional | Learn SQL, filters, syntax | Exact match on structured data |\n| AI-Native | Speak natural language | Semantic match + generated answer |\n| Agentic | State a GOAL | Plans and executes multiple steps autonomously |\n"
+        },
+        {
+          "title": "Agentic Interface",
+          "body": "\nUser states goal → system plans and executes multiple steps, asking only at critical checkpoints. Requires: tools the agent can call, memory across turns, human-in-the-loop checkpoints. The user **delegates**, not operates.\n"
+        }
+      ],
+      "ref": null
+    },
+    {
+      "id": "13",
+      "title": "Quality Assurance",
+      "blocks": [
+        {
+          "title": "Purposes of Codes",
+          "body": "\n- **Surrogate key** (代理键, 无业务意义): Simple sequence code.\n- **Meaningful codes** (有业务意义): Block Sequence Code, Alphabetic Derivation Code, Significant-Digit Subset Code.\n"
+        },
+        {
+          "title": "Human Purposes for Coding",
+          "body": "\nKeeps track of something, Classifies information, Conceals information, Reveals information, Requests appropriate action.\n"
+        },
+        {
+          "title": "Coding Types",
+          "body": "\n| Code Type | Description | Example |\n|:---|:---|:---|\n| Simple Sequence | Number assigned with no relation to data | customer_id: 00000847 |\n| Block Sequence | Data grouped by common characteristics | Software types: 100-199 Browser, 200-299 Database |\n| Alphabetic Derivation | Using letters to identify accounts | (common in account numbers) |\n| Significant-Digit Subset | Describe product by membership in subgroups | LM-X3-W-STD = [category]-[model]-[color]-[spec] |\n"
+        },
+        {
+          "title": "Coding Guidelines",
+          "body": "\nBe concise, Keep codes stable, Ensure uniqueness, Allow sortability, Avoid confusion, Keep uniform, Allow modification, Make meaningful.\n"
+        },
+        {
+          "title": "The Coding Decision (Summary)",
+          "body": "\n- **SKU**: Significant-digit subset (meaningful — products are classified)\n- **customer_id**: Simple sequence (no story — privacy, stability)\n- **order_id**: Block sequence (events, may be classified by date/type)\n"
+        },
+        {
+          "title": "Effective Data Capture Core Principle",
+          "body": "\n**Enter what only humans can know; let the computer figure out the rest.** A base data item should be entered only once at only one point.\n\nThree questions for data entry:\n- Is it changeable? → YES capture each time; NO → look up from master data.\n- Does it differentiate this record? → YES capture; NO → derive it.\n- Can the computer compute it? → NO capture; YES → generate it.\n"
+        },
+        {
+          "title": "Input Validation Types",
+          "body": "\n- **Missing Data**: required field check\n- **Field Length**: expected length\n- **Class/Composition**: right character type\n- **Range/Reasonableness**: plausible range\n- **Comparison with Stored Data**: FK must exist\n- **Self-Checking Digits**: Luhn algorithm\n- **Pattern Match (Regex)**: email, phone format\n"
+        },
+        {
+          "title": "Two-Layer Validation",
+          "body": "\n- **Client-Side**: instant feedback, catches honest mistakes, improves UX, but can be bypassed.\n- **Server-Side**: final defense, never trust client data, enforces business rules, protects against malicious input.\n"
+        },
+        {
+          "title": "Total Quality Management (TQM)",
+          "body": "\nFull organizational support of quality management. \"Test-First\" Principle:\n- Test plan → Unit testing → System testing → Acceptance testing.\n- **Structured Walkthroughs** (结构化复核): peer reviewers monitor programming/development, point out problems.\n"
+        },
+        {
+          "title": "Modularity",
+          "body": "\nWhy complex systems must be modular: Human cognition limits, enables parallel work, change isolation. **Top-Down Approach**: whole → subsystems → modules (each does ONE thing).\n"
+        },
+        {
+          "title": "Documentation",
+          "body": "\n- \"If It Isn't Written Down, It Doesn't Exist\"\n- **Docs-as-Code**: documentation in Git, alongside code, versioned and reviewed.\n- **AI-Assisted Documentation**: LLMs auto-generate from code, summarize meeting notes, chatbots as \"living documentation.\"\n"
+        },
+        {
+          "title": "Training",
+          "body": "\nTraining is not knowledge transfer — it's change management. Elements: Objectives, Methods, Sites, Materials.\n"
+        },
+        {
+          "title": "Conversion Strategies",
+          "body": "\n1. **Parallel**: old + new run together\n2. **Direct cutover**: immediate switch\n3. **Pilot study**: test in one area\n4. **Phased approach**: gradual roll-out\n"
+        },
+        {
+          "title": "Security, Recovery, Evaluation",
+          "body": "\n- **Security**: Authentication/authorization, availability, confidentiality.\n- **Disaster Recovery**: Backup + redundancy (assume everything will fail eventually).\n- **Evaluation**: Define \"success\" before you build.\n"
+        }
+      ],
+      "ref": null
+    },
+    {
+      "id": "14",
+      "title": "Conclusion",
+      "blocks": [
+        {
+          "title": "The MIS Analyst's Mindset",
+          "body": "\n- Information systems are **socio-technical systems**.\n- Technology alone does not solve organizational problems.\n- Good analysis begins with understanding current work.\n- Requirements emerge through investigation and negotiation.\n- Models help clarify complexity.\n- Design choices shape behavior, memory, and decision-making.\n- Implementation is organizational change.\n"
+        },
+        {
+          "title": "Three Key Trends",
+          "body": "\n1. **From Internal Systems to Ecosystem Coordination**: organizational boundaries become fluid, platform governance central, value creation depends on external participants.\n2. **From Data Management to Algorithmic Decision-Making**: recording transactions → analyzing patterns → predicting outcomes → recommending actions → automating decisions. Open issues: data quality, bias, explainability, accountability, human oversight.\n3. **Human-AI Relationship**: Automation (AI performs) vs Augmentation (AI helps) vs Guardianship (humans raise/cultivate AI + accountability). Central design challenge: responsibility design.\n"
+        },
+        {
+          "title": "Final Message",
+          "body": "\n- IS do not simply support organizations — they help **constitute** organizations.\n- They define what can be seen, measured, coordinated, and decided.\n- To analyze and design IS is to participate in the design of **organizational intelligence**.\n\n\n> **简化说明**: 本文档去除了课程后勤信息（教师联系方式、网络平台、成绩分配）、作业说明、小组名单、课堂展示安排、案例细节叙述、图片引用、重复内容等，仅保留与期末考试相关的核心知识点和概念框架。\n"
+        }
+      ],
+      "ref": null
+    }
+  ]
+}
