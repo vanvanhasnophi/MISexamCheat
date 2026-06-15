@@ -167,4 +167,22 @@ if (args.includes('--watch') || args.includes('-w')) {
   });
 } else {
   convert();
+  buildOffline();
+}
+
+function buildOffline() {
+  const HTML_FILE = path.join(__dirname, 'mis-review.html');
+  const OUT_FILE = path.join(__dirname, 'mis-review-offline.html');
+  const SYN_FILE = path.join(__dirname, 'synonyms.json');
+
+  if (!fs.existsSync(HTML_FILE)) { console.error('✗ 缺少 mis-review.html'); return; }
+
+  const dataJSON = JSON.parse(readFile(path.join(CONTENT_DIR, 'data.json')));
+  const synJSON = JSON.parse(readFile(SYN_FILE));
+
+  const embed = '<script>window.__EMBEDDED__={synonyms:' + JSON.stringify(synJSON) + ',data:' + JSON.stringify(dataJSON) + '};</script>';
+  let html = readFile(HTML_FILE);
+  html = html.replace('</body>', embed + '\n</body>');
+  fs.writeFileSync(OUT_FILE, html, 'utf-8');
+  console.log(`📦 离线版 → mis-review-offline.html  (${(fs.statSync(OUT_FILE).size / 1024).toFixed(0)} KB)`);
 }

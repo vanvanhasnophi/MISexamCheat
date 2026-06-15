@@ -194,7 +194,12 @@ async function init() {
   const sd = document.getElementById('statusDot');
   const st = document.getElementById('statusText');
 
-  const tasks = [
+  // Offline: use embedded globals if available
+  if (window.__EMBEDDED__) {
+    SYNONYMS = window.__EMBEDDED__.synonyms;
+    DATA = window.__EMBEDDED__.data;
+  }
+  const tasks = window.__EMBEDDED__ ? [] : [
     { name: 'synonyms.json', fn: () => loadJSON('synonyms.json').then(d => { SYNONYMS = d; }) },
     { name: 'data.json', fn: () => loadJSON('content/data.json').then(d => { DATA = d; }) }
   ];
