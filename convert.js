@@ -22,7 +22,7 @@ function ensureDir(dir) {
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
 }
 
-function readFile(p) { return fs.readFileSync(p, 'utf-8'); }
+function readFile(p) { return fs.readFileSync(p, 'utf-8').replace(/\r\n/g, '\n'); }
 function writeJSON(p, d) { fs.writeFileSync(p, JSON.stringify(d, null, 2), 'utf-8'); }
 
 /** Extract <!-- ref: filename --> from a line, returns "ref/filename" or null */

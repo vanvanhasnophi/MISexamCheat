@@ -3628,6 +3628,8 @@ Why Modular? Human cognition (no one can hold 100K lines of code); Parallel work
 | Training Materials | Depend on user's needs; operating manuals, cases, prototypes, online tutorials |
 
 Training is not knowledge transfer — it's change management.
+
+**Conversion Strategies**: Four strategies — Parallel strategy, Direct cutover, Pilot study, Phased approach.
 [/en]
 
 [zh]
@@ -3639,16 +3641,8 @@ Training is not knowledge transfer — it's change management.
 | 培训材料 | 取决于用户需求；操作手册、案例、设备和输出的原型；在线教程 |
 
 培训不是知识转移——它是变革管理。
-[/zh]
 
-### Conversion Strategies | 切换策略
-
-[en]
-Four strategies: Parallel strategy, Direct cutover, Pilot study, Phased approach
-[/en]
-
-[zh]
-四种策略：并行策略、直接切换、试点研究、分阶段方法
+**切换策略**：四种策略——并行策略、直接切换、试点研究、分阶段方法。
 [/zh]
 
 ### Security, Recovery, and Evaluation | 安全、恢复与评估

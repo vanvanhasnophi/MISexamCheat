@@ -334,7 +334,8 @@ function render() {
 // ===== Markdown → HTML =====
 function md2html(md) {
   if (!md) return '';
-  let h = esc(md);
+  // Normalize Windows line endings
+  let h = esc(md).replace(/\r\n/g, '\n').replace(/\r/g, '\n');
   h = h.replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>');
   h = h.replace(/`([^`]+)`/g,'<code>$1</code>');
   h = h.replace(/(?<!\*)\*([^*\n]+?)\*(?!\*)/g,'<em>$1</em>');
@@ -354,16 +355,26 @@ function md2html(md) {
     out.push('</' + tag + '>');
   }
 
-  let group = [], tbl = [];
+  function flushPara(p) {
+    if (!p.length) return;
+    out.push('<p>' + p.join('<br>') + '</p>');
+    p.length = 0;
+  }
+
+  let group = [], tbl = [], para = [];
   for (const l of lines) {
+    // Table row
     if (/^\|.+\|/.test(l)) {
       flushGroup(group); group = [];
+      flushPara(para);
       tbl.push(l);
       continue;
     }
     if (tbl.length) { out.push(renderTable(tbl)); tbl = []; }
 
+    // List item
     if (/^(\d+\.\s|[-*]\s)/.test(l)) {
+      flushPara(para);
       const isOL = /^\d+\.\s/.test(l);
       const prevOL = group.length && /^\d+\.\s/.test(group[0]);
       if (group.length && isOL !== prevOL) { flushGroup(group); group = []; }
@@ -372,11 +383,20 @@ function md2html(md) {
     }
 
     flushGroup(group); group = [];
-    out.push(l);
+
+    // Blank line → paragraph break
+    if (!l.trim()) {
+      flushPara(para);
+      continue;
+    }
+
+    // Regular text line
+    para.push(l);
   }
   flushGroup(group);
+  flushPara(para);
   if (tbl.length) out.push(renderTable(tbl));
-  return out.filter(l => l !== '').join('');
+  return out.join('');
 }
 
 function renderTable(lns) {
