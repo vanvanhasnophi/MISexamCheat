@@ -69,6 +69,130 @@ Includes computer hardware and software, data management and analytics technolog
 包括计算机硬件和软件、数据管理与分析技术、网络/电信技术。IT 基础设施提供了系统构建的平台。
 [/en]
 
+### Organizational Structures | 组织结构类型  <!-- p=26 -->
+
+[en]
+**Mintzberg's Five Organizational Structures**:
+
+| Type | Description | Examples |
+|:---|:---|:---|
+| Entrepreneurial Structure | Young, small firm in fast-changing environment; simple structure managed by a single CEO | Small start-up |
+| Machine Bureaucracy | Large bureaucracy in slowly changing environment; standard products; centralized management | Midsize manufacturing firm |
+| Divisionalized Bureaucracy | Multiple machine bureaucracies producing different products, topped by central HQ | Large diversified firms |
+| Professional Bureaucracy | Knowledge-based; expertise-dependent; weak centralized authority | Law firms, hospitals, schools |
+| Adhocracy | Task force; rapidly changing environments; multidisciplinary teams; weak central management | Consulting firms |
+
+**Key Insight**: Organizations = Organizational Structures + Business Processes (类比：程序 = 数据结构 + 算法).
+[/en]
+
+[zh]
+**明茨伯格的五种组织结构**：
+
+| 类型 | 描述 | 示例 |
+|:---|:---|:---|
+| 创业型结构 | 小型年轻企业，快速变化环境，由单一 CEO 管理 | 小型初创公司 |
+| 职能式层级结构 | 大型科层组织，缓慢变化环境，标准化产品，集中管理 | 中型制造企业 |
+| 事业部式层级结构 | 多个职能式层级结构组合，生产不同产品，统一由总部管理 | 大型多元化公司 |
+| 专业式层级结构 | 知识型组织，依赖专业知识，集中权力较弱 | 律所、医院、学校 |
+| 民主式结构 | 任务小组，快速响应变化，多学科团队，弱集中管理 | 咨询公司 |
+
+**关键洞察**：组织 = 组织结构 + 业务流程（类比：程序 = 数据结构 + 算法）。
+[/en]
+
+### Examples of Functional Business Processes | 职能业务流程示例  <!-- p=27 -->
+
+[en]
+| Function | Processes |
+|:---|:---|
+| Manufacturing & Production | Assembling the product, Checking for quality, Producing bills of materials |
+| Sales & Marketing | Identifying customers, Making customers aware of the product, Selling the product |
+| Finance & Accounting | Paying creditors, Creating financial statements, Managing cash accounts |
+| Human Resources | Hiring employees, Evaluating job performance, Enrolling employees in benefit plans |
+
+Fulfilling a customer order involves a complex set of steps requiring close coordination of sales, accounting, and manufacturing functions.
+[/en]
+
+[zh]
+| 职能 | 流程 |
+|:---|:---|
+| 制造与生产 | 组装产品、检查质量、生成物料清单 |
+| 销售与市场 | 识别客户、让客户了解产品、销售产品 |
+| 财务与会计 | 支付债权人、编制财务报表、管理现金账户 |
+| 人力资源 | 招聘员工、评估绩效、登记福利计划 |
+
+完成客户订单涉及一系列复杂步骤，需要销售、会计和制造职能的紧密协调。
+[/en]
+
+### Organizational Impacts of Information Systems | 信息系统对组织的影响  <!-- p=29 -->
+
+[en]
+IS can impact all features of an organization:
+
+| Feature | IS Impact |
+|:---|:---|
+| Goals (Strategy) | Support existing goals/strategy; Enable new goals/strategy |
+| Organizational Structure | Reinforce existing structure; Enable more efficient structure |
+| Business Processes | Increase efficiency of existing processes; Enable entirely new processes |
+| Organizational Politics | May cause changes and conflicts in power, resources, and order |
+| Organizational Culture | May threaten commonly held cultural assumptions |
+| Organizational Environments | Help sense and respond to environmental changes |
+
+**Considerations when building IS**:
+- Is the system aligned with the goals of the firm?
+- Does the system fit with the organizational structure? Is changing the structure beneficial?
+- How will business processes be changed?
+- What conflicts of interest, power, resources will arise?
+- Will the system threaten cultural assumptions?
+- How may the system sense and respond to environmental changes?
+[/en]
+
+[zh]
+IS 可以影响组织的所有特征：
+
+| 特征 | IS 的影响 |
+|:---|:---|
+| 目标（战略） | 支持现有战略；促成新战略 |
+| 组织结构 | 巩固现有结构；促成更高效的结构 |
+| 业务流程 | 提高现有流程效率；促成全新流程 |
+| 组织政治 | 可能引发权力、资源和秩序的变革与冲突 |
+| 组织文化 | 可能挑战普遍认同的文化假设 |
+| 组织环境 | 帮助感知和响应环境变化 |
+
+**构建 IS 时需要考虑的问题**：
+- 系统是否与公司的目标一致？
+- 系统是否与组织结构匹配？改变结构是否有益？
+- 业务流程将如何改变？
+- 会产生哪些利益、权力、资源的冲突？
+- 系统是否会挑战组织文化假设？
+- 系统如何感知和响应组织环境的变化？
+[/en]
+
+### The Emerging Digital Firm | 新兴的数字化企业  <!-- p=34 -->
+
+[en]
+In a **fully digital firm**:
+- Significant business relationships are digitally enabled and mediated
+- Core business processes are accomplished through digital networks
+- Key corporate assets are managed digitally
+- Digital firms offer greater flexibility: **time shifting** and **space shifting**
+
+A digital firm has established interdependence between its ability to use IT and its ability to implement corporate strategies and achieve corporate goals.
+
+**Complementary Assets**: Investing in IT alone does not guarantee good returns. Firms need the right business model and complementary assets (organizational and management capital) — the organization and management dimensions are as important as the technology dimension.
+[/en]
+
+[zh]
+在**完全数字化企业**中：
+- 重要的业务关系通过数字方式实现和协调
+- 核心业务流程通过数字网络完成
+- 关键企业资产通过数字方式管理
+- 数字化企业提供更大的灵活性：**时间转移**和**空间转移**
+
+数字化企业在其使用 IT 的能力与实施公司战略及实现公司目标的能力之间建立了相互依赖关系。
+
+**互补性资产**：仅靠 IT 投资不能保证良好回报。企业需要正确的业务模式和互补性资产（组织和管理资本）——组织和管理维度与技术维度同样重要。
+[/en]
+
 ### Strategic Business Objectives of Information Systems | 信息系统的战略业务目标  <!-- p=31 -->
 
 [en]
@@ -197,6 +321,58 @@ Systems for linking the enterprise that span functional areas, execute business 
 - **电子商务（广义）**：使用数字技术和互联网驱动主要业务流程。
 - **电子商贸（狭义）**：电子商务的子集；通过互联网买卖商品和服务。
 - **电子政务**：使用互联网技术向公民、员工和企业提供信息和服务。
+[/en]
+
+### Detailed Look: TPS, MIS, DSS, ESS | 详解各层级系统  <!-- p=55 -->
+
+[en]
+**Transaction Processing Systems (TPS)**:
+- Serve operational managers and staff.
+- Perform and record daily routine transactions (e.g., sales order entry, payroll, shipping).
+- Allow managers to monitor status of operations and relations with external environment.
+- Serve predefined, structured goals and decision making.
+
+**Management Information Systems (MIS)**:
+- Serve middle management.
+- Provide reports on firm's current performance, based on data from TPS.
+- Provide answers to routine questions with predefined procedures.
+- Typically have little analytic capability.
+
+**Decision Support Systems (DSS)**:
+- Serve middle management.
+- Support nonroutine decision making (e.g., "What is the impact on production schedule if December sales doubled?").
+- May use external information as well as TPS/MIS data.
+
+**Executive Support Systems (ESS)**:
+- Support senior management.
+- Address nonroutine decisions requiring judgment, evaluation, and insight.
+- Incorporate external events (e.g., new tax laws, competitors) as well as summarized internal information.
+- Example: Digital dashboard with real-time view of firm's financial performance.
+[/en]
+
+[zh]
+**事务处理系统（TPS）**：
+- 服务运营管理人员和一线员工。
+- 执行和记录日常例行事务（如销售订单录入、工资发放、发货）。
+- 使管理者能监控运营状态和与外部环境的关系。
+- 服务于预定义的结构化目标和决策。
+
+**管理信息系统（MIS）**：
+- 服务中层管理。
+- 基于 TPS 数据提供公司当前绩效报告。
+- 以预定义程序回答例行问题。
+- 通常分析能力有限。
+
+**决策支持系统（DSS）**：
+- 服务中层管理。
+- 支持非例行决策（如"如果 12 月销售额翻倍，对生产计划有何影响？"）。
+- 可使用外部信息和 TPS/MIS 数据。
+
+**主管支持系统（ESS）**：
+- 支持高层管理。
+- 处理需要判断、评估和洞察的非例行决策。
+- 整合外部事件（如新税法、竞争对手）和内部汇总信息。
+- 示例：实时显示公司财务绩效的数字仪表板。
 [/en]
 
 ---
@@ -352,6 +528,104 @@ Software that permits an organization to centralize data, manage them efficientl
 - **情境化 AI 智能体**：用于自动服务。
 [/en]
 
+### Data Policy and Data Administration | 数据政策与数据管理  <!-- p=27 -->
+
+[en]
+**Information Policy**: Specifies the organization's rules for sharing, disseminating, acquiring, standardizing, classifying, and inventorying information. (e.g., only selected HR members can change and view sensitive employee data.)
+
+**Data Administration**: Management group who establishes policies and procedures to manage data.
+
+**Data Governance**: Organizational structure that deals with policies and processes for managing availability, usability, integrity, and security of data.
+
+**Database Administration**: Management group who creates and maintains databases.
+[/en]
+
+[zh]
+**信息政策**：规定组织共享、分发、获取、标准化、分类和清点信息的规则。（如只有选定的 HR 部门成员才能更改和查看敏感的雇员数据。）
+
+**数据管理部门**：制定管理数据政策和程序的管理团队。
+
+**数据治理结构**：处理数据可用性、可用性、完整性和安全性管理政策和流程的组织结构。
+
+**数据库管理部门**：创建和维护数据库的管理团队。
+[/en]
+
+### Databases and the Web | 数据库与 Web  <!-- p=28 -->
+
+[en]
+Many companies use the web to make internal databases available to customers or partners. **Typical Configuration — Multi-tier Server**:
+- **Web Server**: Handles HTTP requests from browsers/mobile apps.
+- **Application Server / Middleware / CGI Scripts**: Business logic layer.
+- **Database Server**: Hosts the DBMS.
+
+**Advantages**:
+- Ease of use of browser software.
+- Web interface requires few or no changes to the database.
+- Inexpensive to add web interface to existing systems.
+[/en]
+
+[zh]
+许多公司使用 Web 向客户或合作伙伴提供内部数据库访问。**典型配置——多层服务器**：
+- **Web 服务器**：处理来自浏览器/移动应用的 HTTP 请求。
+- **应用服务器/中间件/CGI 脚本**：业务逻辑层。
+- **数据库服务器**：托管 DBMS。
+
+**优势**：
+- 浏览器软件易于使用。
+- Web 界面无需或仅需少量修改数据库。
+- 为现有系统添加 Web 界面成本低廉。
+[/en]
+
+### OLAP: Multi-dimensional Operations | OLAP 多维分析操作  <!-- p=30 -->
+
+[en]
+**OLAP (Online Analytical Processing)** supports multidimensional data analysis, viewing data using multiple dimensions (e.g., product, pricing, cost, region, time period).
+
+Key operations on a **Data Cube**:
+| Operation | Description |
+|:---|:---|
+| Slice (切片) | Extract a single dimension slice from the cube |
+| Dice (切块) | Extract a sub-cube by selecting multiple dimensions |
+| Pivot (旋转) | Rotate the cube to view from different perspectives |
+| Drill Down (下钻) | Navigate from summary to detail (e.g., Year → Quarter → Month) |
+| Roll Up (上卷) | Aggregate from detail to summary (e.g., City → Province → Country) |
+[/en]
+
+[zh]
+**OLAP（联机分析处理）**支持多维数据分析，使用多个维度查看数据（如产品、定价、成本、地区、时间段）。
+
+对**数据立方体**的关键操作：
+| 操作 | 描述 |
+|:---|:---|
+| 切片 | 从立方体中提取单个维度切片 |
+| 切块 | 通过选择多个维度提取子立方体 |
+| 旋转 | 旋转立方体从不同视角查看 |
+| 下钻 | 从汇总导航到明细（如 年→季→月） |
+| 上卷 | 从明细聚合到汇总（如 城市→省份→国家） |
+[/en]
+
+### IT Governance and Investment | IT 治理与投资决策  <!-- p=34 -->
+
+[en]
+**IT Governance**: Who controls IT infrastructure? How should the IT department be organized? How are costs allocated between divisions and departments?
+
+**Making Wise Infrastructure Investments**:
+- Both under-investment and over-investment can hamper firm performance.
+- **Total Cost of Ownership (TCO) Model**: Analyze direct and indirect costs of owning hardware and software.
+- **Competitive Forces Model**: Evaluate strategic value of IT investments.
+- **Rent-versus-Buy Decision**: Insourcing, outsourcing, or cloud computing?
+[/en]
+
+[zh]
+**IT 治理**：谁控制 IT 基础设施？IT 部门应如何组织？成本如何在各部门间分配？
+
+**做出明智的基础设施投资**：
+- 投资不足和过度投资都会损害公司绩效。
+- **总拥有成本（TCO）模型**：分析拥有硬件和软件的直接和间接成本。
+- **竞争力量模型**：评估 IT 投资的战略价值。
+- **租用-购买决策**：内部自建、外包还是云计算？
+[/en]
+
 ### Security and Availability | 安全与可用性  <!-- p=41 -->
 
 [en]
@@ -491,6 +765,52 @@ Software that permits an organization to centralize data, manage them efficientl
 - 总经理充当调解人。
 [/en]
 
+### MRP Details and Evolution | MRP 详解与演进  <!-- p=27 -->
+
+[en]
+**MRP (Material Requirement Planning)** — three simultaneous objectives:
+1. **Material**: Ensure materials are available for production and products are available for delivery.
+2. **Requirement**: Maintain the lowest possible material and product levels in store.
+3. **Plan**: Plan manufacturing activities, delivery schedules, and purchasing activities.
+
+**Bill of Materials (BOM)**: A comprehensive list of parts, assemblies, and other materials required to create a product. MRP uses BOM to back-calculate from target → required inputs. Theoretic foundation: **Operations Research (OR, 运筹学)**.
+
+**Limitations of MRP**:
+- Focuses only on materials; assumes no constraints on production capacity, procurement, or manpower.
+- No cost information integrated.
+- Lack of capability to change based on feedback.
+- Poor data integrity (low quality data).
+
+**MRP II (Manufacturing Resource Planning)** improvements:
+- Addresses all resources: Money, Manpower, Materials, production capacity.
+- Adds operational planning in financial units.
+- Has simulation capability for "what-if" questions.
+
+**Why MRP II → ERP?** The ultimate goal is to maximize value (profit), not just optimize production. In an Abundance Economy (post-1990s/2000s), marketing, financing, procurement, logistics, sales, and HR become as important as production itself.
+[/en]
+
+[zh]
+**MRP（物料需求计划）**——三个同步目标：
+1. **物料**：确保生产有料可用，产品可供交付。
+2. **需求**：维持尽可能低的物料和产品库存水平。
+3. **计划**：规划制造活动、交货日程和采购活动。
+
+**物料清单（BOM）**：创建产品所需的零件、组件和其他材料的综合清单。MRP 使用 BOM 从目标向后计算所需输入。理论基础：**运筹学（OR）**。
+
+**MRP 的局限性**：
+- 仅关注物料；假设生产能力、采购、人力无约束。
+- 通常不整合成本信息。
+- 缺乏根据反馈进行调整的能力。
+- 数据完整性差（数据质量低）。
+
+**MRP II（制造资源计划）的改进**：
+- 覆盖所有资源：资金、人力、材料、生产能力。
+- 新增财务单位的运营计划。
+- 具备"假设"问题的模拟能力。
+
+**为何 MRP II → ERP？** 企业终极目标是最大化价值（利润），而不仅仅是优化生产。在充裕经济（1990年代/2000年代之后）中，营销、融资、采购、物流、销售和 HR 变得与生产同等重要。
+[/en]
+
 ### Supply Chain Management (SCM) | 供应链管理  <!-- p=31 -->
 
 [en]
@@ -530,6 +850,81 @@ Software that permits an organization to centralize data, manage them efficientl
 
 **推-拉混合策略**：混合方法。早期阶段使用基于汇总预测的推式；最终生产使用基于特定客户需求的拉式。
 
+**供应链效率与准时制**：
+- 供应链低效可浪费高达 25% 的运营费用。
+- **准时制（Just-in-Time, JIT）策略**：组件在需要时到达，成品在离开装配线后发货。条件：关于客户需求的完美信息。
+- 现实中的不确定性：需求不确定、供应商延迟发货、缺陷零件、生产中断 → 需要**安全库存**作为缓冲。
+
+**供应商管理库存（VMI）经典案例——宝洁与沃尔玛**：
+- 1980年：沃尔玛圣路易斯门店致电宝洁，请求自动持续补货货架上的帮宝适。
+- 宝洁经理设计了沃尔玛库存数据库与宝洁生产仓库数据库的连接。
+- 当货架几乎空时，供应商自动发货，每月结算付款。
+- 1987年：宝洁将系统从帮宝适扩展到所有产品。
+- 沃尔玛的收益：节省约 20% 的库存持有成本。
+- 宝洁的收益：实时获取沃尔玛数据，每天精准配送匹配预测销量，将库存和缺货控制在最低水平。
+
+**牛鞭效应复现——啤酒分销游戏数据**：
+
+| 情景 | 总链成本 | 成本指数 | 需求放大率(%) |
+|:---|:---|:---|:---|
+| 基准案例 | 3358 | 1.47 | 900 |
+| 无订单延迟 | 1944 | 0.85 | 500 |
+| 生产者-零售商间无中间商 | 939 | 0.82 | 350 |
+| 生产者可获取消费者需求数据 | 2295 | 1.01 | 425 |
+| 所有阶段可获取消费者需求数据 | 1293 | 0.57 | 200 |
+
+核心结论：信息共享和减少中间环节显著降低牛鞭效应。
+[/en]
+
+[zh]
+**供应链效率与准时制**：
+- 供应链低效可浪费高达 25% 的运营费用。
+- **准时制（Just-in-Time, JIT）策略**：组件在需要时到达，成品在离开装配线后发货。条件：关于客户需求的完美信息。
+- 现实中的不确定性：需求不确定、供应商延迟发货、缺陷零件、生产中断 → 需要**安全库存**作为缓冲。
+
+**供应商管理库存（VMI）经典案例——宝洁与沃尔玛**：
+- 1980年：沃尔玛圣路易斯门店致电宝洁，请求自动持续补货货架上的帮宝适。
+- 宝洁经理设计了沃尔玛库存数据库与宝洁生产仓库数据库的连接。
+- 当货架几乎空时，供应商自动发货，每月结算付款。
+- 1987年：宝洁将系统从帮宝适扩展到所有产品。
+- 沃尔玛的收益：节省约 20% 的库存持有成本。
+- 宝洁的收益：实时获取沃尔玛数据，每天精准配送匹配预测销量，将库存和缺货控制在最低水平。
+
+**牛鞭效应复现——啤酒分销游戏数据**：
+
+| 情景 | 总链成本 | 成本指数 | 需求放大率(%) |
+|:---|:---|:---|:---|
+| 基准案例 | 3358 | 1.47 | 900 |
+| 无订单延迟 | 1944 | 0.85 | 500 |
+| 生产者-零售商间无中间商 | 939 | 0.82 | 350 |
+| 生产者可获取消费者需求数据 | 2295 | 1.01 | 425 |
+| 所有阶段可获取消费者需求数据 | 1293 | 0.57 | 200 |
+
+核心结论：信息共享和减少中间环节显著降低牛鞭效应。
+[/en]
+
+### Push-Pull Strategy and Product Types | 推拉策略与产品类型  <!-- p=48 -->
+
+[en]
+**Trade-off between Efficiency and Responsiveness**:
+| Product Type | Characteristics | Strategy |
+|:---|:---|:---|
+| Functional Products | Stable, predictable demand; long life cycles; low profit margins | Push (efficiency-focused) |
+| Innovative Products | Unpredictable demand; short life cycles; high variety; higher margins | Pull (responsiveness-focused) |
+
+**Decoupling Point (DP)**: The point in the supply chain where push transitions to pull. Early stages use push (aggregated forecasts), final stages use pull (actual customer demand for specific configurations).
+[/en]
+
+[zh]
+**效率与响应性的权衡**：
+| 产品类型 | 特征 | 策略 |
+|:---|:---|:---|
+| 功能型产品 | 稳定可预测需求；长生命周期；低利润率 | 推式（效率导向） |
+| 创新型产品 | 不可预测需求；短生命周期；高品种；较高利润率 | 拉式（响应导向） |
+
+**解耦点（DP）**：供应链中从推式过渡到拉式的点。早期阶段使用推式（汇总预测），最终阶段使用拉式（实际客户需求用于特定配置）。
+[/en]
+
 **供应链管理系统**：
 - 供应链计划系统：建模现有供应链，实现需求计划，优化采购/制造计划，设定库存水平，确定运输模式。
 - 供应链执行系统：管理产品通过配送中心和仓库的流动。
@@ -555,10 +950,10 @@ Software that permits an organization to centralize data, manage them efficientl
 **CRM Paradox ("Dark side of CRM")**: Treating customers differently (segmentation) may cause perceptions of unfairness, dissatisfaction, and mistrust (e.g., Amazon's dynamic pricing controversy).
 
 **Trends in CRM**:
-- Social media for inbound marketing
-- Cloud computing and SaaS-based CRM (e.g., Salesforce.com)
-- Mobile devices and IoT as data sources
-- Integration with ERP/SCM
+- Social media for inbound marketing: BestBuy's personalized customer service; Ford used text mining on tweets to help design SUV trunk features.
+- Cloud computing and SaaS-based CRM: e.g., Salesforce.com.
+- Mobile devices and IoT as data sources: EMC² helped Audi optimize car models based on GPS, braking data, driving habits; iQIYI used sequence mining on user click/drag data to edit shows.
+- Integration with ERP/SCM: enables Total Life Cycle Immersive Marketing.
 [/en]
 
 [zh]
@@ -578,11 +973,11 @@ Software that permits an organization to centralize data, manage them efficientl
 
 **CRM 悖论（"CRM 的黑暗面"）**：区别对待客户（细分）可能导致不公平感、不满和不信任（如亚马逊的动态定价争议）。
 
-**CRM 趋势**：
-- 用于集客营销的社交媒体
-- 云计算和基于 SaaS 的 CRM（如 Salesforce.com）
-- 作为数据源的移动设备和物联网
-- 与 ERP/SCM 集成
+**CRM 趋势与实例**：
+- 社交媒体用于集客营销：BestBuy 的个性化客户服务；福特使用文本挖掘技术分析推文以辅助 SUV 后备箱设计。
+- 云计算和基于 SaaS 的 CRM：如 Salesforce.com。
+- 移动设备和物联网作为数据源：EMC² 帮助奥迪基于 GPS、制动数据、驾驶习惯等优化车型；爱奇艺基于用户点击和拖拽数据进行序列挖掘，将 2 小时节目剪辑为 30 分钟版本。
+- 与 ERP/SCM 集成：实现全生命周期沉浸式营销（Total Life Cycle Immersive Marketing）。
 [/en]
 
 ---
@@ -680,6 +1075,86 @@ Digital goods are goods that can be delivered over a digital network:
 **捆绑销售**：将多个产品一起销售（如微软 Office）。原因：互补性、市场竞争、重塑需求曲线。
 [/en]
 
+### E-commerce Business and Revenue Models | 电子商务业务与收入模式  <!-- p=18 -->
+
+[en]
+**Types of E-commerce**:
+| Type | Description | Example |
+|:---|:---|:---|
+| B2C (Business-to-Consumer) | Selling products/services directly to consumers | Amazon, TMall, JD.com |
+| B2B (Business-to-Business) | Transactions between businesses | Alibaba.com, Ariba.com |
+| C2C (Consumer-to-Consumer) | Consumers selling to other consumers | eBay |
+| Hybrid | Mix of B2C and C2C | Taobao.com |
+
+**Business Models**:
+Portal, E-tailer, Content Provider, Transaction Broker, Market Creator, Service Provider, Community Provider.
+
+**Revenue Models**:
+Advertising, Sales, Subscription, Free/Freemium, Transaction Fee, Affiliate.
+
+**Marketing Transformations**:
+- **Behavioral Targeting**: Using user behavior data to target ads.
+- **Social Commerce**: Commerce enabled by social networks.
+[/en]
+
+[zh]
+**电子商务类型**：
+| 类型 | 描述 | 示例 |
+|:---|:---|:---|
+| B2C（企业对消费者） | 直接向消费者销售产品/服务 | 亚马逊、天猫、京东 |
+| B2B（企业对企业） | 企业间交易 | 阿里巴巴国际站 |
+| C2C（消费者对消费者） | 消费者向其他消费者销售 | eBay |
+| 混合型 | B2C 和 C2C 混合 | 淘宝网 |
+
+**业务模式**：
+门户、电子零售商、内容提供商、交易经纪人、市场创建者、服务提供商、社区提供商。
+
+**收入模式**：
+广告、销售、订阅、免费/免费增值、交易费、联盟佣金。
+
+**营销变革**：
+- **行为定位**：使用用户行为数据精准投放广告。
+- **社交电商**：通过社交网络实现的商务。
+[/en]
+
+### Evolution of Internet Digital Platforms in China | 中国互联网数字平台演化  <!-- p=21 -->
+
+[en]
+Four evolutionary stages:
+1. **Stage I (late 1990s ~ early 2000s)**: Four basic functional platforms developed in parallel (communication, content, commerce, social).
+2. **Stage II (~2005 ~ 2015)**: Fusion of communication and content — social media emerges (Weibo, WeChat).
+3. **Stage III (~2015 ~ now)**: Fusion of social media and commerce — social commerce (WeChat commerce, live-streaming commerce).
+4. **Stage IV (envisioned)**: Fusion of social commerce and supply chain coordination.
+[/en]
+
+[zh]
+四个演化阶段：
+1. **第一阶段（90年代末~00年代初）**：四类基本功能平台并行发展（通讯、内容、商务、社交）。
+2. **第二阶段（~2005~2015）**：通讯与内容融合——社交媒体出现（微博、微信）。
+3. **第三阶段（~2015~至今）**：社交媒体与商务融合——社交电商（微信商务、直播电商）。
+4. **第四阶段（展望中）**：社交电商与供应链协调的融合。
+[/en]
+
+### From Bundling to Subscription Economy | 从捆绑到订阅经济  <!-- p=23 -->
+
+[en]
+**The Shift in Digital Economics**:
+- **Traditional Bundling**: Selling discrete products together to capture consumer surplus in a single transaction (e.g., buying a CD-ROM of Microsoft Office 2007).
+- **Subscription Economy**: Selling continuous access to a continuously updated platform (e.g., Microsoft 365, Adobe Creative Cloud, ChatGPT Plus).
+- **Core mechanism**: Still bundling — but in the *time dimension*.  
+- **Lock-in Effect & Switching Costs**: As users accumulate data and habits within a cloud ecosystem, leaving becomes prohibitively expensive.
+- **Democratization + Extraction**: Subscriptions lower the initial barrier but allow firms to extract greater total value over the customer lifetime.
+[/en]
+
+[zh]
+**数字经济的转变**：
+- **传统捆绑**：将离散产品一起销售以在单次交易中获取消费者剩余（如购买一张 Microsoft Office 2007 CD-ROM）。
+- **订阅经济**：销售对持续更新平台的持续访问（如 Microsoft 365、Adobe Creative Cloud、ChatGPT Plus）。
+- **核心机制**：仍然是捆绑——但是在*时间维度*上。
+- **锁定效应与转换成本**：当用户在云生态系统中积累数据和习惯后，离开变得代价高昂。
+- **民主化 + 价值提取**：订阅降低了初始门槛，但使企业能够在整个客户生命周期中获取更大的总价值。
+[/en]
+
 ### Knowledge Management | 知识管理  <!-- p=27 -->
 
 [en]
@@ -699,6 +1174,24 @@ Digital goods are goods that can be delivered over a digital network:
 - Enterprise-wide Knowledge Management Systems: Enterprise Content Management (ECM), collaboration and social tools, learning management systems.
 - Knowledge Work Systems (KWS): Computer-Aided Design (CAD), virtual reality for scientists, engineers, knowledge workers.
 - Intelligent Techniques: Data mining, neural networks, expert systems, case-based reasoning, fuzzy logic, genetic algorithms, intelligent agents.
+
+**Enterprise-Wide KM Systems in Detail**:
+- **Enterprise Content Management (ECM)**: Help capture, store, retrieve, distribute, preserve documents and semi-structured knowledge. Include digital asset management systems.
+- **Collaboration & Social Tools**: Blogs, wikis, social networking tools.
+- **Learning Management Systems (LMS)**: For training and managing learning activities.
+- **Key Challenge**: Developing taxonomy; alternatives: tagging, search engines.
+- **Major Vendors**: Alfresco, Box Platform, Hyland OnBase, IBM Cloud Pak, iManage Work, Microsoft 365, and Chinese vendors.
+
+**Knowledge Work Systems & Technologies**:
+- **Knowledge Workers**: Researchers, designers, architects, scientists, engineers. Three key roles: ① keeping organization current in knowledge; ② serving as internal consultants; ③ acting as change agents.
+- **CAD (Computer-Aided Design)**: Creating engineering/architectural designs; 3D printing.
+- **VR/AR Systems**: Virtual and augmented reality for simulation and design.
+- **Collaboration Systems**: Document collaboration (Google Docs, Tencent Docs, Dropbox); Developer collaboration (GitHub, GitLab); Project management (Notion, Confluence).
+
+**Intelligent Techniques**:
+- **Capturing Expert Knowledge**: Rule-based (expert systems, fuzzy logic); Case-based (case-based reasoning).
+- **Discovering Knowledge**: Machine learning (neural networks, genetic algorithms, LLMs like ChatGPT, DeepSeek); Data mining (associations, sequences, classification, clustering, forecasting).
+- **Automating Tasks**: Intelligent agents — software that performs tasks autonomously on behalf of users.
 
 **LLMs in Knowledge Management**:
 Four current approaches: prompt engineering, fine-tuning, RAG (Retrieval-Augmented Generation), contextualized AI agents.
@@ -727,6 +1220,24 @@ Four current approaches: prompt engineering, fine-tuning, RAG (Retrieval-Augment
 - 企业级知识管理系统：企业内容管理（ECM）、协作与社交工具、学习管理系统。
 - 知识工作系统（KWS）：计算机辅助设计（CAD）、用于科学家、工程师、知识工作者的虚拟现实。
 - 智能技术：数据挖掘、神经网络、专家系统、基于案例的推理、模糊逻辑、遗传算法、智能自主体。
+
+**企业级知识管理系统详解**：
+- **企业内容管理（ECM）系统**：帮助捕获、存储、检索、分发、保存文档和半结构化知识。包括数字资产管理系统。
+- **协作与社交工具**：博客、维基、社交网络工具用于沟通和协作。
+- **学习管理系统（LMS）**：用于培训员工和管理学习活动。
+- **关键挑战**：开发分类体系；替代方案：标签、搜索引擎。
+- **主要供应商**：Alfresco、Box Platform、Hyland OnBase、IBM Cloud Pak、iManage Work、Microsoft 365，以及国内厂商（天翎、天纵、鸿翼等）。
+
+**知识工作系统与技术**：
+- **知识工作者**：研究人员、设计师、架构师、科学家、工程师。三个关键角色：①保持组织在知识方面的先进性；②在其专业领域充当内部顾问；③作为变革代理人评估和推动变革项目。
+- **CAD（计算机辅助设计）**：创建工程/建筑设计；3D 打印。
+- **VR/AR 系统**：用于仿真和设计的虚拟/增强现实。
+- **协作系统**：文档协作（Google Docs、腾讯文档、Dropbox）；开发者协作（GitHub、GitLab）；项目管理（Notion、Confluence）。
+
+**智能技术**：
+- **捕捉专家知识**：基于规则（专家系统、模糊逻辑规则）；基于案例（基于案例的推理）。
+- **发现知识**：机器学习（神经网络、遗传算法、LLM如 ChatGPT、DeepSeek）；数据挖掘（关联、序列、分类、聚类、预测）。
+- **自动化任务**：智能自主体（代表用户自主执行任务的软件）。
 
 **知识管理中的 LLM**：
 四种当前方法：提示词工程、微调、RAG（检索增强生成）、情境化 AI 智能体。
@@ -978,6 +1489,16 @@ Four current approaches: prompt engineering, fine-tuning, RAG (Retrieval-Augment
 - Net Present Value (NPV)
 - Internal Rate of Return (IRR)
 
+**Limitations of Financial Models**:
+- Focus on financial and technical aspects; overlook social and organizational dimensions.
+- Costs not considered: organizational disruptions.
+- Benefits not considered: intangible benefits such as more timely decisions.
+- TPS usually produce more measurable, tangible benefits; MIS, DSS, ESS produce more intangible benefits.
+
+**Information Systems Plan**: Typical structure — Purpose of the Plan, Strategic Business Plan Rationale, Current Systems, New Developments, Management Strategy, Implementation Plan, Budget Requirements.
+
+**Portfolio Analysis**: Evaluate alternative projects; inventory all IS projects and assets; balance risk and return. Information-intensive industries may include a few high-risk, high-benefit projects; non-information-intensive industries should focus on high-benefit, low-risk projects.
+
 **Dimensions of Project Risks**:
 - Project size (costs, time, number of units affected)
 - Project structure (structured requirements = lower risk)
@@ -1016,6 +1537,67 @@ Four current approaches: prompt engineering, fine-tuning, RAG (Retrieval-Augment
 - 净现值（NPV）
 - 内部收益率（IRR）
 
+**财务模型的局限性**：
+- 聚焦财务和技术层面，忽视社会和组织维度。
+- 未考虑成本：组织混乱。
+- 未考虑收益：无形收益（如更及时的决策）。
+- TPS 通常产生更多可量化收益；MIS、DSS、ESS 产生更多无形收益。
+
+### Information Systems Plan and Portfolio Analysis | 信息系统规划与组合分析  <!-- p=34 -->
+
+[en]
+**Information Systems Plan**: Supports the overall business plan; strategic systems incorporated into top-level planning. Typical structure:
+- **Purpose of the Plan**: Overview, current and future organization, key business processes, management strategy.
+- **Strategic Business Plan Rationale**: Current situation, changing environments, major goals.
+- **Current Systems**: Major systems, infrastructure capabilities, difficulties, anticipated future demands.
+- **New Developments**: New system projects, new infrastructure capabilities.
+- **Management Strategy**: Acquisition plans, milestones, organizational realignment, training, personnel.
+- **Implementation Plan**: Anticipated difficulties, progress reports.
+- **Budget Requirements**: Requirements, potential savings, financing, acquisition cycle.
+
+**Portfolio Analysis**: Evaluate alternative projects; inventory all IS projects and assets; balance risk and return. Information-intensive industries (e.g., finance) may have a few high-risk, high-benefit projects; non-information-intensive industries should focus on high-benefit, low-risk projects.
+[/en]
+
+[zh]
+**信息系统规划书**：支持整体业务计划；战略系统纳入顶层规划。典型结构：
+- **规划目的**：概述、当前和未来组织、关键业务流程、管理策略。
+- **战略业务计划依据**：当前形势、变化环境、主要目标。
+- **当前系统**：主要系统、基础设施能力、困难、预期未来需求。
+- **新发展**：新系统项目、新的基础设施能力。
+- **管理策略**：采购计划、里程碑和时间安排、组织调整、培训、人力资源策略。
+- **实施计划**：预期困难、进展报告。
+- **预算需求**：需求、潜在节约、融资、采购周期。
+
+**项目组合分析**：评估替代项目；盘点所有 IS 项目和资产；平衡风险与回报。信息密集型行业（如金融）可能包含少量高风险高回报项目；非信息密集型行业应聚焦高回报低风险项目。
+[/en]
+
+### User-Designer Communication Gap | 用户-设计者沟通鸿沟  <!-- p=38 -->
+
+[en]
+A major cause of IS project failure. IS specialists have a technical orientation; users prefer systems oriented to solving business problems.
+
+| User Concerns | Designer Concerns |
+|:---|:---|
+| Will the system deliver the information we need for our work? | What demands will this system put on our servers? |
+| Can we access the data on our iPhones, tablets, and PCs? | What kind of programming demands will this place on our group? |
+| What new procedures do we need to enter data into the system? | Where will the data be stored? What's the most efficient way to store them? |
+| How will the operation of the system change employees' daily routines? | What technologies should we use to secure the data? |
+
+**Change Agent**: The systems analyst's role is to bridge this gap, redefining the configurations, interactions, job activities, and power relationships of organizational groups.
+[/en]
+
+[zh]
+IS 项目失败的主要原因之一。IS 专家倾向于技术导向的问题解决方式；用户偏好面向业务问题的系统。
+
+| 用户关注 | 设计者关注 |
+|:---|:---|
+| 系统能否提供我们工作所需的信息？ | 该系统对我们的服务器会有什么需求？ |
+| 我们能否在手机、平板和电脑上访问数据？ | 这会对我们团队的编程提出什么要求？ |
+| 我们需要什么新流程来录入数据？ | 数据该存在哪里？最高效的存储方式是什么？ |
+| 系统的运行将如何改变员工的日常惯例？ | 我们应该使用什么技术来保护数据？ |
+
+**变革代理人**：系统分析师的角色就是弥合这一鸿沟，重新定义组织群体的配置、交互、工作活动和权力关系。
+[/en]
 **项目风险维度**：
 - 项目规模（成本、时间、受影响单位数量）
 - 项目结构（结构化需求 = 较低风险）
