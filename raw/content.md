@@ -1698,6 +1698,94 @@ Three primary roles of the systems analyst:
 **CASE 工具**：计算机辅助软件工程工具自动化开发（draw.io、Microsoft Visio、Lucidchart、Visual Paradigm、StarUML、Umbrello）。
 [/en]
 
+### SDLC Phases in Detail | SDLC 各阶段详解  <!-- p=26 -->
+
+[en]
+**1. Identifying Problems, Opportunities, and Objectives**
+- Activity: Interview user management, summarize knowledge, estimate scope, document results.
+- Output: Feasibility report with problem definition and objective summaries.
+
+**2. Determining Information Requirements**
+- Activity: Interviewing, sampling, questionnaires, observe decision-maker's behavior/environment, prototyping. Learn the who, what, where, when, how, and why of the current system.
+- Output: Understanding of how users accomplish work; complete information on people, goals, data, and procedures.
+
+**3. Analyzing System Needs**
+- Activity: Create DFDs, complete data dictionary, analyze structured decisions, prepare system proposal.
+- Output: Recommendation on what should be done.
+
+**4. Designing the Recommended System**
+- Activity: Design data entry procedures, HCI, files/database, backup procedures.
+- Output: Model of the actual system.
+
+**5. Developing and Documenting Software**
+- Activity: Work with programmers to develop software; work with users to develop documentation (procedure manuals, online help, FAQ, ReadMe).
+- Output: Computer programs, system documentation.
+
+**6. Testing and Maintaining the System**
+- Activity: Test the IS; system maintenance; maintenance documentation.
+- Output: Problems identified, updated programs, documentation.
+
+**7. Implementing and Evaluating the System**
+- Activity: Train users, plan conversion, review and evaluate system.
+- Output: Trained personnel, installed system.
+[/en]
+
+[zh]
+**1. 识别问题、机会与目标**
+- 活动：访谈用户管理、汇总知识、估算范围、记录结果。
+- 输出：包含问题定义和目标摘要的可行性报告。
+
+**2. 确定信息需求**
+- 活动：访谈、抽样、问卷、观察决策者行为与环境、原型开发。了解当前系统的 who, what, where, when, how, why。
+- 输出：理解用户如何完成工作；获得人员、目标、数据和流程的完整信息。
+
+**3. 分析系统需求**
+- 活动：创建 DFD、完善数据字典、分析结构化决策、准备系统建议书。
+- 输出：关于应如何处理的建议。
+
+**4. 设计推荐系统**
+- 活动：设计数据录入流程、人机界面、文件/数据库、备份流程。
+- 输出：实际系统的模型。
+
+**5. 开发与文档化软件**
+- 活动：与程序员协作开发软件；与用户协作编写文档（操作手册、在线帮助、FAQ、ReadMe）。
+- 输出：计算机程序、系统文档。
+
+**6. 测试与维护系统**
+- 活动：测试 IS；系统维护；维护文档。
+- 输出：识别的问题、更新的程序、文档。
+
+**7. 实施与评估系统**
+- 活动：培训用户、规划切换、审查和评估系统。
+- 输出：经过培训的人员、安装好的系统。
+[/en]
+
+### Agile Approach Phases | 敏捷方法各阶段  <!-- p=29 -->
+
+[en]
+**1. Exploration**: Assemble team, assess skills, examine potential technologies, experiment with user stories, adopt a playful and curious attitude.
+
+**2. Planning**: Rules to formulate the team's relationship with business customers; maximize system value. Main players: development team and business customer.
+
+**3. Iterations to First Release**: Cycles of testing → feedback → change. Goal: run customer-written function tests at the end of each iteration.
+
+**4. Productionizing**: Product is released; may be improved by adding features.
+
+**5. Maintenance**: New features may be added; riskier suggestions considered; team members rotated.
+[/en]
+
+[zh]
+**1. 探索**：组建团队、评估技能、考察潜在技术、尝试编写用户故事、保持好奇和开放的心态。
+
+**2. 规划**：制定敏捷团队与业务客户关系的规则；最大化系统价值。主要参与者：开发团队和业务客户。
+
+**3. 首次发布迭代**：测试→反馈→变更的循环。目标：每次迭代结束时运行客户编写的功能测试。
+
+**4. 产品化**：产品发布；可添加功能进行改进。
+
+**5. 维护**：可能添加新功能；考虑风险较高的建议；轮换团队成员。
+[/en]
+
 ### Understanding and Modeling Organizational Systems | 理解与建模组织系统  <!-- p=37 -->
 
 [en]
@@ -1739,6 +1827,29 @@ Three primary roles of the systems analyst:
 **Work Breakdown Structure (WBS)**:
 - Decomposition from large ideas to manageable activities.
 - Product-oriented or process-oriented.
+
+**Time Estimation Techniques**:
+- Relying on experience
+- Using analogies (similar past projects)
+- Three-point estimation (optimistic, pessimistic, most likely)
+- Identifying function points (IFPUG standard)
+- COCOMO II (time estimation software)
+
+**PERT Diagram Example** — Analysis Phase of a Systems Project:
+
+| Activity | Predecessor | Duration (days) |
+|:---|:---|:---|
+| A. Conduct interviews | None | 3 |
+| B. Administer questionnaires | A | 4 |
+| C. Read company reports | None | 4 |
+| D. Analyze data flow | B, C | 8 |
+| E. Introduce prototype | B, C | 5 |
+| F. Observe reactions to prototype | E | 3 |
+| G. Perform cost-benefit analysis | D | 3 |
+| H. Prepare proposal | F, G | 2 |
+| I. Present proposal | H | 2 |
+
+**PERT Advantages**: Easy identification of precedence order, critical path and critical activities, slack time determination. Pseudo-activities (dummy activities) preserve logic.
 [/en]
 
 [zh]
@@ -1752,6 +1863,29 @@ Three primary roles of the systems analyst:
 **工作分解结构（WBS）**：
 - 从大的想法分解到可管理的活动。
 - 面向产品或面向过程。
+
+**时间估算技术**：
+- 依赖经验
+- 使用类比（类似过去项目）
+- 三点估算（乐观、悲观、最可能）
+- 识别功能点（IFPUG 标准）
+- COCOMO II（时间估算软件）
+
+**PERT 图示例**——系统项目分析阶段：
+
+| 活动 | 前置活动 | 持续时间（天） |
+|:---|:---|:---|
+| A. 进行访谈 | 无 | 3 |
+| B. 发放问卷 | A | 4 |
+| C. 阅读公司报告 | 无 | 4 |
+| D. 分析数据流 | B, C | 8 |
+| E. 引入原型 | B, C | 5 |
+| F. 观察对原型的反应 | E | 3 |
+| G. 执行成本效益分析 | D | 3 |
+| H. 准备建议书 | F, G | 2 |
+| I. 展示建议书 | H | 2 |
+
+**PERT 优势**：轻松识别优先级顺序、关键路径和关键活动、松驰时间。伪活动（虚拟活动）用于保持逻辑。
 [/en]
 
 ---
@@ -1783,6 +1917,94 @@ Three primary roles of the systems analyst:
 3. **问卷调查**：高效接触众多利益相关者、量化意见、对功能进行优先级排序。开放式、封闭式/量表、排序问题。避免偏见、确保信度和效度。
 
 **信息需求分析的产出**：需求说明书，包含：项目概述、利益相关者分析、功能需求（优先级用例）、非功能需求、业务规则、数据需求、假设与约束。
+[/en]
+
+### Interview Question Types and Structure | 访谈问题类型与结构  <!-- p=8 -->
+
+[en]
+**Question Types with Examples**:
+
+| Type | Purpose | Example |
+|:---|:---|:---|
+| Open-Ended | Explore broad topics | "What's your opinion of the current state of e-commerce in your firm?" |
+| Closed | Get specific facts | "How many calls does the call center receive monthly?" |
+| Bipolar | Force a yes/no stance | "Do you agree that e-commerce lacks security?" |
+| Probes | Dig deeper | "Why? Give an example. Tell me step by step what happens." |
+
+**Question Structures**:
+- **Pyramid** (Closed → Open): Warm up reluctant interviewees.
+- **Funnel** (Open → Closed): When interviewee feels emotional about topic.
+- **Diamond** (Closed → Open → Closed): Combines strengths of both; takes longer.
+
+**Interview Preparation Steps**:
+1. Read background material (org charts, existing documents, system screenshots).
+2. Establish interview objectives (what to learn).
+3. Decide whom to interview (operational → management → external users).
+4. Prepare the interviewee (send invitation with context and expectations).
+5. Decide question types and structure.
+
+**Closing the Interview**: Always ask "anything else?", summarize impressions, ask for next contacts, set future appointments, thank.
+[/en]
+
+[zh]
+**问题类型与示例**：
+
+| 类型 | 目的 | 示例 |
+|:---|:---|:---|
+| 开放式 | 探索广泛话题 | "您对公司当前的电商状况有何看法？" |
+| 封闭式 | 获取具体事实 | "呼叫中心每月收到多少电话？" |
+| 两极式 | 强制是/否立场 | "您是否同意电商缺乏安全性？" |
+| 追问 | 深入挖掘 | "为什么？举一个例子。逐步告诉我发生了什么。" |
+
+**问题结构**：
+- **金字塔**（封闭→开放）：让不情愿的受访者热身。
+- **漏斗**（开放→封闭）：受访者对话题有情感投入时。
+- **钻石**（封闭→开放→封闭）：结合两者优势；耗时更长。
+
+**访谈准备步骤**：
+1. 阅读背景材料（组织结构图、现有文档、系统截图）。
+2. 确定访谈目标。
+3. 决定访谈对象（操作层→管理层→外部用户）。
+4. 准备受访者（发送包含背景和期望的邀请）。
+5. 决定问题类型和结构。
+
+**结束访谈**：总是问"还有什么要补充的吗？"、总结印象、询问下一位联系人、安排后续约见、感谢。
+[/en]
+
+### AI-Based Development Tools | AI 开发工具  <!-- p=22 -->
+
+[en]
+**1. AI Code Assistants / IDE Plugins**:
+- Real-time, editor-integrated tools for inline code completion and lightweight code generation.
+- **GitHub Copilot**: AI pair programmer providing real-time code suggestions in VS Code, JetBrains, etc.
+- **Cursor**: AI-first code editor with built-in chat, refactoring, and context-aware suggestions.
+
+**2. Autonomous Coding Agents / CLI Tools**:
+- Standalone, multi-step agents that explore files, refactor codebases, run tests, and complete projects end-to-end.
+- **Claude Code**: Anthropic's CLI agent for iterative, multi-file tasks with strong reasoning.
+- **OpenCode**: Open-source CLI coding agent for autonomous development workflows.
+
+**3. AI Agent Orchestration / Workflow Frameworks**:
+- Platforms for managing AI agent sessions, skills, tools, and collaboration.
+- **OpenClaw**: Manages sessions, sub-agents, skills, tools, and memory; enables multi-agent collaboration.
+- **Hermes**: For repetitive, structured tasks with consistent users/teams.
+[/en]
+
+[zh]
+**1. AI 代码助手/IDE 插件**：
+- 编辑器集成的实时工具，提供行内代码补全和轻量级代码生成。
+- **GitHub Copilot**：AI 结对程序员，在 VS Code、JetBrains 等 IDE 中提供实时代码建议。
+- **Cursor**：AI 优先的代码编辑器，内置聊天、重构和上下文感知建议。
+
+**2. 自主编程智能体/CLI 工具**：
+- 独立的多步骤智能体，可探索文件、重构代码库、运行测试、端到端完成项目。
+- **Claude Code**：Anthropic 的 CLI 智能体，擅长迭代式多文件任务。
+- **OpenCode**：开源 CLI 编程智能体，用于自主开发工作流。
+
+**3. AI 智能体编排/工作流框架**：
+- 管理 AI 智能体会话、技能、工具和协作的平台。
+- **OpenClaw**：管理会话、子智能体、技能、工具和记忆；支持多智能体协作。
+- **Hermes**：用于重复性、结构化任务，面向一致的团队/用户。
 [/en]
 
 ### Unobtrusive Methods | 无干扰方法  <!-- p=25 -->
@@ -1856,6 +2078,54 @@ Three primary roles of the systems analyst:
 **DevOps**：自动化和集成软件开发与 IT 团队之间流程的实践和工具集合。
 [/en]
 
+### Scrum in Detail | Scrum 详解  <!-- p=12 -->
+
+[en]
+Scrum is founded on empirical process control theory with three pillars:
+- **Transparency**: Process and work must be visible.
+- **Inspection**: Frequent inspection of artifacts and progress.
+- **Adaptation**: Adjust process when it deviates from acceptable limits.
+
+**Roles**:
+- **Product Owner**: Represents stakeholders; manages Product Backlog; maximizes value.
+- **Scrum Master**: Coaches team; removes impediments; ensures Scrum is understood.
+- **Developers**: Cross-functional, self-organizing; deliver potentially releasable Increment each Sprint.
+
+**Artifacts**:
+- **Product Backlog**: Ordered list of everything needed; single source of work.
+- **Sprint Backlog**: Selected items + plan for delivering them.
+- **Increment**: Usable, working product produced by the end of sprint.
+
+**Events**:
+- **Sprint Planning**: Define what will be done (max 8 hours for 1-month sprint).
+- **Daily Scrum**: 15-minute daily stand-up to align progress.
+- **Sprint Review**: Demo work to stakeholders for feedback.
+- **Sprint Retrospective**: Reflect on process and create improvement plan.
+[/en]
+
+[zh]
+Scrum 建立在经验过程控制理论之上，三大支柱：
+- **透明性**：过程和所做工作必须可见。
+- **检视**：频繁检查工件和进展。
+- **调适**：当过程偏离可接受限度时进行调整。
+
+**角色**：
+- **产品负责人**：代表利益相关者；管理产品待办列表；最大化价值。
+- **Scrum 主管**：指导团队；消除障碍；确保 Scrum 被正确理解和执行。
+- **开发人员**：跨职能、自组织；每个冲刺交付潜在可发布增量。
+
+**工件**：
+- **产品待办列表**：所需内容的排序列表；唯一工作来源。
+- **冲刺待办列表**：选中的条目 + 交付计划。
+- **增量**：冲刺结束时产生的可用、可工作的产品。
+
+**事件**：
+- **冲刺规划**：定义将要做什么（1 个月冲刺最多 8 小时）。
+- **每日站会**：15 分钟每日同步进展。
+- **冲刺评审**：向利益相关者展示工作以获取反馈。
+- **冲刺回顾**：反思过程并制定改进计划。
+[/en]
+
 ### Data Flow Diagrams | 数据流图  <!-- p=18 -->
 
 [en]
@@ -1922,6 +2192,55 @@ Three primary roles of the systems analyst:
 **事件建模**：来自外部实体的输入流是启动过程活动的触发器。事件响应表将事件映射到触发器、活动、响应、目的地。
 
 **划分**：根据不同用户组、时机、类似任务、效率、数据一致性、安全性，将 DFD 划分为手工流程和计算机程序的集合。
+[/en]
+
+### CRUD Matrix and Event Modeling | CRUD 矩阵与事件建模  <!-- p=25 -->
+
+[en]
+**CRUD Matrix**: Tracks Create, Read, Update, Delete operations for each data entity used by each process. Ensures every master file has all four operations present somewhere in the system.
+
+| Activity | Customer | Item | Order | Order Detail |
+|:---|:---|:---|:---|:---|
+| Customer Logon | | R | | |
+| Item Inquiry | | R | | |
+| Item Selection | | R | C | |
+| Order Checkout | U | U | U | |
+| Add Account | C | | | |
+
+**Event Modeling**: An input flow from an external entity is a **trigger** that starts process activities. An **Event Response Table** maps events to their triggers, activities, responses, and destinations.
+
+| Event | Source | Trigger | Activity | Response | Destination |
+|:---|:---|:---|:---|:---|:---|
+| Customer logs on | Customer | ID + password | Verify password; send welcome | Welcome page | Customer |
+| Customer browses items | Customer | Item info | Find price/quantity; respond | Item Response page | Customer |
+| Customer places item in cart | Customer | Item + quantity | Store order detail; update total; update quantity on hand | Items Purchased page | Customer |
+| Customer checks out | Customer | Clicks "Check Out" | Display Customer Order page | Verification page | — |
+| Send customer email | Temporal | Hourly | Send shipment confirmation | — | Customer |
+
+Every row in an event table represents a data flow diagram fragment used to create a single process.
+[/en]
+
+[zh]
+**CRUD 矩阵**：跟踪每个过程对每个数据实体的创建、读取、更新、删除操作。确保每个主文件在系统中某处有全部四类操作。
+
+| 活动 | 客户 | 商品 | 订单 | 订单明细 |
+|:---|:---|:---|:---|:---|
+| 客户登录 | | R | | |
+| 商品查询 | | R | | |
+| 选择商品 | | R | C | |
+| 订单结算 | U | U | U | |
+
+**事件建模**：来自外部实体的输入流是启动过程活动的**触发器**。**事件响应表**将事件映射到其触发器、活动、响应和目的地。
+
+| 事件 | 来源 | 触发器 | 活动 | 响应 | 目的地 |
+|:---|:---|:---|:---|:---|:---|
+| 客户登录 | 客户 | ID+密码 | 验证密码；发送欢迎 | 欢迎页 | 客户 |
+| 客户浏览商品 | 客户 | 商品信息 | 查找价格/数量；响应 | 商品响应页 | 客户 |
+| 客户放入购物车 | 客户 | 商品+数量 | 存储订单明细；更新总计 | 已选商品页 | 客户 |
+| 客户结算 | 客户 | 点击"结算" | 显示客户订单页 | 验证页 | — |
+| 发送客户邮件 | 时间 | 每小时 | 发送发货确认 | — | 客户 |
+
+事件表中每一行代表一个数据流图片段，用于创建单个过程。
 [/en]
 
 ---
@@ -2013,6 +2332,28 @@ Three primary roles of the systems analyst:
 - 决策树：顺序关键、并非每个条件都与每个操作相关。
 [/en]
 
+### Checking Decision Tables | 检查决策表  <!-- p=23 -->
+
+[en]
+Four main problems to check in decision tables:
+1. **Incompleteness**: Are there rules for all possible condition combinations? (2^N conditions → 2^N rules needed)
+2. **Impossible Situations**: Are there rules for combinations that can never occur in reality? Mark as "impossible" rather than leaving blank.
+3. **Contradictions**: Two or more rules have same conditions but different actions.
+4. **Redundancy**: Two or more rules have same conditions AND same actions — can be combined.
+
+**Simplifying Decision Tables**: Combine rules where condition values don't matter for the outcome. Use "—" (don't care) to indicate irrelevant conditions.
+[/en]
+
+[zh]
+需要检查决策表中的四个主要问题：
+1. **不完整**：是否所有可能的条件组合都有对应规则？（N 个条件 → 需要 2^N 条规则）
+2. **不可能情况**：是否有对应现实中不可能出现的组合的规则？应标记为"不可能"而非留空。
+3. **矛盾**：两条或多条规则具有相同条件但不同操作。
+4. **冗余**：两条或多条规则具有相同条件且相同操作——可以合并。
+
+**简化决策表**：合并条件值不影响结果的规则。使用"—"（不关心）表示无关条件。
+[/en]
+
 ---
 ## 10. Object-Oriented Systems Analysis and Design | 面向对象的系统分析与设计  <!-- ref: 10.Object_Orient_Analysis.pdf -->
 
@@ -2088,8 +2429,164 @@ Three primary roles of the systems analyst:
 - 控制类：控制活动流程
 [/en]
 
+### Use Case Scenario Template | 用例场景模板  <!-- p=14 -->
+
+[en]
+A use case scenario includes three main areas:
+1. **Use case identifiers and initiators**: Name, Unique ID, Area, Actor(s), Description, Triggering Event, Trigger type.
+2. **Steps performed**: Main path step-by-step (numbered), with information for each step.
+3. **Conditions, assumptions, and questions**: Preconditions, Postconditions, Assumptions, Requirements Met, Outstanding Issues, Priority, Risk.
+
+**Example — Change Student Information**:
+
+| Element | Description |
+|:---|:---|
+| Use case name | Change Student Information |
+| Unique ID | Student UC 005 |
+| Actor(s) | Student |
+| Triggering Event | Student enters ID/password on secure website and clicks Submit |
+| Steps Performed | 1. Student logs on to secure server. 2. Record read and password verified. 3. Current info displayed. 4. Student enters changes and submits. 5. Changes validated. 6. Journal record written. 7. Student record updated. 8. Confirmation sent. |
+| Preconditions | Student is on Change Student Information web page |
+| Postconditions | Student has successfully changed personal information |
+| Assumptions | Student has browser and valid ID/password |
+| Priority | Medium |
+[/en]
+
+[zh]
+用例场景包含三个主要部分：
+1. **用例标识符和发起者**：名称、唯一 ID、领域、参与者、描述、触发事件、触发类型。
+2. **执行步骤**：主路径逐步描述（编号），以及每步的信息。
+3. **条件、假设和问题**：前置条件、后置条件、假设、满足的需求、未解决问题、优先级、风险。
+
+**示例——更改学生信息**：
+
+| 要素 | 描述 |
+|:---|:---|
+| 用例名称 | 更改学生信息 |
+| 唯一 ID | Student UC 005 |
+| 参与者 | 学生 |
+| 触发事件 | 学生在安全网站输入 ID/密码并点击提交 |
+| 执行步骤 | 1. 学生登录安全服务器。2. 读取记录并验证密码。3. 显示当前信息。4. 学生输入更改并提交。5. 验证更改。6. 写入日志记录。7. 更新学生记录。8. 发送确认。 |
+| 前置条件 | 学生在更改学生信息网页上 |
+| 后置条件 | 学生已成功更改个人信息 |
+| 假设 | 学生有浏览器和有效 ID/密码 |
+| 优先级 | 中 |
+[/en]
+
+### Activity Diagram Symbols and Usage | 活动图符号与用法  <!-- p=15 -->
+
+[en]
+**Symbols**:
+- **Rectangle with rounded ends**: Activity/Action
+- **Arrow**: Control flow
+- **Diamond**: Decision/merge (branching)
+- **Long flat rectangle**: Swimlane (actor/role responsibility)
+- **Filled-in circle**: Start
+- **Black circle surrounded by white circle**: End
+- **Fork/Join bars**: Parallel activities (split and synchronize)
+
+**When to Use Activity Diagrams**:
+- Helps understand activities of a use case
+- Flow of control is complex
+- Need to model workflow
+- Need to show all scenarios for a use case
+
+**Activity Diagrams and Test Plans**: Each event and decision must be tested to verify correct state transitions.
+[/en]
+
+[zh]
+**符号**：
+- **圆角矩形**：活动/动作
+- **箭头**：控制流
+- **菱形**：决策/合并（分支）
+- **长扁平矩形**：泳道（参与者/角色职责）
+- **实心圆**：开始
+- **黑圈包围的白圈**：结束
+- **分叉/汇合条**：并行活动（拆分和同步）
+
+**何时使用活动图**：
+- 帮助理解用例的活动
+- 控制流复杂
+- 需要建模工作流
+- 需要展示用例的所有场景
+
+**活动图与测试计划**：每个事件和决策都必须测试以验证正确的状态转换。
+[/en]
+
+### Class Relationships and Statecharts | 类关系与状态图  <!-- p=18 -->
+
+[en]
+**Types of Class Relationships**:
+- **Associations**: Simplest relationship; an object in one class relates to objects in another (or same) class. **Reflexive association**: relationship to objects in the same class.
+- **Association Classes**: Used to break up many-to-many associations between classes.
+- **Whole/Part Relationships**:
+  - **Aggregation**: Whole is composed of sum of its parts.
+  - **Collection**: Members may change, but whole retains its identity.
+  - **Composition**: Whole has responsibility for the parts (parts cannot exist independently).
+
+**Sequence Diagram Layers**:
+1. **Presentation Layer**: What the user sees — interface/boundary classes.
+2. **Business Layer**: Unique rules for this application — control classes.
+3. **Persistence/Data Access Layer**: Obtaining and storing data — entity classes.
+
+**Statechart Diagrams** — Create when:
+- A class has a complex life cycle.
+- An instance may update its attributes in multiple ways through the life cycle.
+- A class has an operational life cycle.
+- Two classes depend on each other.
+- The object's current behavior depends on what happened previously.
+
+**Event Types**: Signals/asynchronous messages, Synchronous calls, Temporal events (time-based).
+[/en]
+
+[zh]
+**类关系类型**：
+- **关联**：最简单的关系；一个类中的对象与另一个（或同一个）类中的对象相关。**自反关联**：与同一类的对象的关系。
+- **关联类**：用于打破类之间的多对多关联。
+- **整体/部分关系**：
+  - **聚合**：整体由其各部分之和组成。
+  - **集合**：成员可能变化，但整体保持其身份。
+  - **组成**：整体对部分负责（部分不能独立存在）。
+
+**序列图层级**：
+1. **表示层**：用户所见——接口/边界类。
+2. **业务层**：应用的独特规则——控制类。
+3. **持久化/数据访问层**：获取和存储数据——实体类。
+
+**状态图**——在以下情况创建：
+- 类有复杂的生命周期。
+- 实例在整个生命周期中可能以多种方式更新其属性。
+- 类有操作生命周期。
+- 两个类相互依赖。
+- 对象的当前行为取决于之前发生的事情。
+
+**事件类型**：信号/异步消息、同步调用、时间事件（基于时间）。
+[/en]
+
 ---
 ## 11. Designing Output and Input | 输出与输入设计  <!-- ref: 11.Designing_Output_Input.pdf -->
+
+### MVC Pattern and Output-Input Duality | MVC 模式与输入输出二元性  <!-- p=3 -->
+
+[en]
+**MVC Pattern for Output and Input**:
+1. User clicks "Reserve" → **View** (what user sees)
+2. View → **Controller** (sends reservation request)
+3. Controller → **Model** (creates order)
+4. Model → View (updates seat status)
+
+Output and input are two sides of one coin — every output can become input; every input shapes output. **Core Principle**: Right information, right person, right time, right medium.
+[/en]
+
+[zh]
+**MVC 模式中的输出与输入**：
+1. 用户点击"预订" → **View**（用户所见）
+2. View → **Controller**（发送预订请求）
+3. Controller → **Model**（创建订单）
+4. Model → View（更新座位状态）
+
+输出和输入是一枚硬币的两面——每个输出都可以成为输入；每个输入都会塑造输出。**核心原则**：正确的信息、正确的人、正确的时间、正确的媒介。
+[/en]
 
 ### Designing Effective Output | 设计有效输出  <!-- p=7 -->
 
@@ -2099,6 +2596,14 @@ Three primary roles of the systems analyst:
 2. Keep it simple and uncluttered
 3. Neutralize output bias
 4. Provide context alongside summarization
+
+**Output Bias — Design Choices Shape Decisions**:
+- **Sorting Bias**: Alphabetical vs. chronological vs. ranked → different conclusions.
+- **Graphical Bias**: Bar chart vs. pie chart vs. table → different impressions.
+- **Truncation Bias**: Where you set the Y-axis changes perception dramatically.
+- **Aggregation Bias**: Summaries hide outliers; averages erase distribution.
+
+Analysts should avoid unnecessarily biasing output and make users aware of possible biases.
 
 **Output Methods**:
 | Medium | Advantage | Best For |
@@ -2146,7 +2651,15 @@ Three primary roles of the systems analyst:
 | Barcode/QR Scanning | Instant, accurate | Inventory, retail POS |
 | Touch/Gesture | Intuitive, no peripherals | Kiosks, mobile apps |
 
-**Smart Defaults**: Anticipate user input to reduce errors and speed completion.
+**Smart Defaults**: Anticipate user input to reduce errors and speed completion. Pre-fill predictable fields (date, location, logged-in user info).
+
+**The Best Data Entry is No Data Entry** — Core Principle:
+- Enter what only humans can know; let the computer figure out the rest.
+- A base data item should be entered only once at only one point.
+- Bad form: 5 human-typed fields (name, phone, product, price, total).
+- Good form: 1 human-typed field (quantity only — rest auto-filled from master data/lookup).
+
+**Emerging Data-Entry Methods**: OCR (auto-fill addresses), Computer Vision (shelf recognition), LLM (extract data from unstructured emails), IoT sensors (auto-report stock levels).
 
 **Validation**: Client-side (instant feedback, catches honest mistakes) and server-side (final defense, enforces business rules, protects against malicious input).
 [/en]
@@ -2166,7 +2679,15 @@ Three primary roles of the systems analyst:
 | 条码/二维码扫描 | 即时、准确 | 库存、零售 POS |
 | 触摸/手势 | 直观、无需外设 | 信息亭、移动应用 |
 
-**智能默认值**：预判用户输入以减少错误并加快完成速度。
+**智能默认值**：预判用户输入以减少错误并加快完成速度。预填可预测字段（日期、地点、已登录用户信息）。
+
+**最好的数据录入是没有录入**——核心原则：
+- 只输入人类才能知道的信息；让计算机计算其余部分。
+- 一个基础数据项应只在一个点输入一次。
+- 坏表单：5 个人工输入字段（姓名、电话、产品、价格、总计）。
+- 好表单：1 个人工输入字段（仅数量——其余从主数据/查找中自动填充）。
+
+**新兴数据录入方法**：OCR（自动填写地址）、计算机视觉（货架识别）、LLM（从非结构化邮件中提取数据）、IoT 传感器（自动报告库存水平）。
 
 **验证**：客户端（即时反馈、捕捉诚实错误）和服务器端（最后防线、执行业务规则、防止恶意输入）。
 [/en]
@@ -2180,14 +2701,26 @@ Three primary roles of the systems analyst:
 **Relational Databases**: Data organized into tables (relations) with rows (tuples/records) and columns (fields/attributes). Primary key uniquely identifies each row. Foreign key links tables.
 
 **Normalization (规范化)**: Process of eliminating data redundancy and anomalies.
-| Normal Form | Rule |
-|:---|:---|
-| 1NF | Atomic values, no repeating groups |
-| 2NF | 1NF + no partial dependency on composite key |
-| 3NF | 2NF + no transitive dependency |
+
+**Three Anomalies from Poor Normalization**:
+| OrderID | Customer | CustPhone | Product | UnitPrice | Qty |
+| 1001 | Zhang | 138... | iPhone | 6999 | 1 |
+| 1002 | Zhang | 138... | AirPods | 1299 | 2 |
+| 1003 | Zhang | 139... | iPhone | 7099 | 1 |
+
+- **Update Anomaly**: Phone updated in only one row → inconsistency.
+- **Insert Anomaly**: Can't add a customer without an order.
+- **Delete Anomaly**: Delete last order → customer record lost.
+
+| Normal Form | Rule | Plain Meaning |
+|:---|:---|:---|
+| 1NF | Atomic values, no repeating groups | One cell, one fact |
+| 2NF | 1NF + no partial dependency on composite key | Don't mix two things in one table |
+| 3NF | 2NF + no transitive dependency | Non-key attributes depend on key only |
 
 - Aim for 3NF by default.
 - Denormalize intentionally when query performance demands it.
+- Normalize for correctness; Denormalize for performance; Document both.
 
 **OLTP vs. OLAP**:
 | | OLTP (Operational) | OLAP (Analytical) |
@@ -2209,14 +2742,26 @@ Three primary roles of the systems analyst:
 **关系型数据库**：数据组织成表（关系），包含行（元组/记录）和列（字段/属性）。主键唯一标识每一行。外键链接表。
 
 **规范化**：消除数据冗余和异常的过程。
-| 范式 | 规则 |
-|:---|:---|
-| 1NF | 原子值，无重复组 |
-| 2NF | 1NF + 无对复合键的部分依赖 |
-| 3NF | 2NF + 无传递依赖 |
+
+**不规范化的三大异常**：
+| OrderID | 客户 | 电话 | 产品 | 单价 | 数量 |
+| 1001 | 张三 | 138... | iPhone | 6999 | 1 |
+| 1002 | 张三 | 138... | AirPods | 1299 | 2 |
+| 1003 | 张三 | 139... | iPhone | 7099 | 1 |
+
+- **更新异常**：仅在一行更新电话 → 不一致。
+- **插入异常**：没有订单就无法添加客户。
+- **删除异常**：删除最后一笔订单 → 客户记录丢失。
+
+| 范式 | 规则 | 通俗解释 |
+|:---|:---|:---|
+| 1NF | 原子值，无重复组 | 一个单元格，一个事实 |
+| 2NF | 1NF + 无对复合键的部分依赖 | 不要把两件事混在一张表里 |
+| 3NF | 2NF + 无传递依赖 | 非主键属性只依赖于主键 |
 
 - 默认目标是 3NF。
 - 当查询性能需要时有意识地反规范化。
+- 为正确性规范化；为性能反规范化；两者都做记录。
 
 **OLTP vs. OLAP**：
 | | OLTP（运营型） | OLAP（分析型） |
@@ -2257,6 +2802,38 @@ Three primary roles of the systems analyst:
 - Agentic: "Delegate to the system to act on your behalf."
 
 Agentic interfaces: User expresses a GOAL; the system PLANS and EXECUTES multiple steps autonomously. Requires tools (APIs, code execution), memory across turns, human-in-the-loop checkpoints.
+
+**Agentic vs. Natural Language**:
+| | Natural Language Query | Agentic Interface |
+|:---|:---|:---|
+| System does | Returns ONE answer | Runs a multi-step PLAN |
+| User does | Decides next action | Supervises, not operates |
+| Example | "Show sales in Q3" | "Fix this bug end-to-end" — plans → edits → tests → reports |
+
+For the first time, the user does not OPERATE the system — the user DELEGATES to the system.
+
+**Historical Perspective**:
+- **1970s-2000s**: Users learned the database's language (SQL, menus, forms).
+- **2010s**: Mobile/touch made interaction more natural; data stayed structured.
+- **2020s**: Vector + LLM let the system understand the USER's language.
+[/en]
+
+[zh]
+智能体界面：用户表达目标；系统自主规划和执行多步骤行动。需要工具（API、代码执行）、跨轮次记忆、人在回路检查点。
+
+**智能体 vs. 自然语言**：
+| | 自然语言查询 | 智能体界面 |
+|:---|:---|:---|
+| 系统做 | 返回一个答案 | 运行多步骤计划 |
+| 用户做 | 决定下一步行动 | 监督而非操作 |
+| 示例 | "显示 Q3 销售额" | "从头到尾修复这个 bug"——计划→编辑→测试→报告 |
+
+历史上第一次，用户不再操作系统——用户将任务委托给系统。
+
+**历史视角**：
+- **1970s-2000s**：用户学习数据库的语言（SQL、菜单、表单）。
+- **2010s**：移动/触控使交互更自然；数据保持结构化。
+- **2020s**：向量+LLM 让系统理解用户的语言。
 [/en]
 
 [zh]
@@ -2324,9 +2901,25 @@ Agentic interfaces: User expresses a GOAL; the system PLANS and EXECUTES multipl
 
 **编码指南**：简洁、稳定、唯一、可排序、避免混淆、统一、可修改、有意义。
 
+**三种编码策略的权衡**：
+
+| 编码类型 | 适用场景 | 收益 | 代价 |
+|:---|:---|:---|:---|
+| 简单序列码 (customer_id) | 标识符 | 永久稳定、隐私安全、可删除个人信息而不破坏引用 | 不可读、暴露规模 |
+| 分类序列编码 (order_id) | 事件/分类 | 自然时间排序、日期范围查询=主键范围扫描 | 计数器需集中管理、暴露每日交易量 |
+| 子集代号编码 (SKU) | 产品 | 人工可读、可按段排序、批量操作一行 SQL | 段含义可能过时、每段有空间限制 |
+
 **有效数据捕获——核心原则**：
 - 只输入人类才能知道的信息；让计算机计算出其余部分。
 - 一个基础数据项应只在一个点输入一次。
+
+**数据捕获决策矩阵**：
+
+| 问题 | Yes → | No → |
+|:---|:---|:---|
+| 是否可变？ | 每次捕获（数量、日期） | 从主数据查找 |
+| 是否区分此记录？ | 捕获（要订购的 SKU） | 派生（SKU 的名称、价格、重量） |
+| 计算机能否计算？ | 生成（时间戳、ID、总计） | 捕获 |
 
 **验证**：八种验证类型：
 1. 缺失数据
@@ -2341,6 +2934,13 @@ Agentic interfaces: User expresses a GOAL; the system PLANS and EXECUTES multipl
 **两道防线**：
 - 客户端验证：即时反馈，捕捉诚实错误。
 - 服务器端验证：最后防线，执行业务规则，防止恶意输入。
+
+**验证管道——错误成本随阶段指数增长**：
+```
+客户端验证 → 服务器端验证 → 数据库约束 → 人工修复
+捕获成本: $1          $10            $100        $1000+
+```
+三道防线：永远不要信任客户端数据——在服务端重新验证一切。服务端验证是唯一真正重要的防线。
 [/en]
 
 ### Quality Assurance and Implementation | 质量保证与实施  <!-- p=26 -->
@@ -2369,10 +2969,55 @@ Agentic interfaces: User expresses a GOAL; the system PLANS and EXECUTES multipl
 - Pilot: New in one location first.
 - Phased: New in stages.
 
+**Modularity and Documentation**:
+- **Divide and Conquer**: The oldest engineering principle. Modules let each person understand one piece at a time; teams work on different modules simultaneously; change is local.
+- **Top-Down Approach**: Whole → subsystems → modules → each module does ONE thing.
+- **Designing for Maintenance**: Keep modules manageable size; pay attention to critical interfaces; minimize modules user must modify when changing.
+
+**Documentation — "If It Isn't Written Down, It Doesn't Exist"**:
+- **Procedure Manuals**: The classic approach.
+- **Docs-as-Code (2026)**: Documentation lives in Git alongside code; versioned, reviewed, deployed with code. Tools: MkDocs, Docusaurus, Confluence+Git.
+- **AI-Assisted Documentation**: LLMs auto-generate docs from code; AI summarizes meeting notes into specs; chatbots serve as "living documentation."
+
+**Training — Not Just Knowledge Transfer, It's Change Management**:
+
+| Element | Considerations |
+|:---|:---|
+| Training Objectives | Depend on user's job requirements |
+| Training Methods | Combination of lecture, demonstration, hands-on, study |
+| Training Sites | On-site, vendor facilities, in-house, rented |
+| Training Materials | Operating manuals, cases, prototypes, online tutorials |
+
 **Security, Recovery, and Evaluation**:
 - Security: Authentication, authorization, availability, confidentiality.
-- Disaster Recovery: Backup and redundancy.
-- Evaluation: Define "success" before building.
+- Disaster Recovery: Backup and redundancy — assume everything will fail eventually.
+- Evaluation: Define "success" before building, or you'll never prove it after.
+[/en]
+
+[zh]
+**模块化与文档化**：
+- **分而治之**：最古老的工程原则。模块让每个人一次理解一块；团队同时在不同模块上工作；变更局部化。
+- **自顶向下方法**：整体→子系统→模块→每个模块只做一件事。
+- **面向维护的设计**：保持模块大小可管理；关注关键接口；最小化变更时用户需要修改的模块数量。
+
+**文档化——"如果没有写下来，它就不存在"**：
+- **操作手册**：经典方法。
+- **Docs-as-Code（2026）**：文档与代码同存于 Git；版本化、审查、与代码一起部署。工具：MkDocs、Docusaurus、Confluence+Git。
+- **AI 辅助文档化**：LLM 从代码自动生成文档；AI 将会议记录总结为规格说明；聊天机器人充当"活文档"。
+
+**培训——不仅是知识传递，更是变革管理**：
+
+| 要素 | 考量 |
+|:---|:---|
+| 培训目标 | 取决于用户的工作需求 |
+| 培训方法 | 组合讲课、演示、动手操作、自学 |
+| 培训地点 | 现场、供应商设施、自建、租赁 |
+| 培训材料 | 操作手册、案例、原型、在线教程 |
+
+**安全、恢复与评估**：
+- 安全性：身份认证、授权、可用性、保密性。
+- 灾难恢复：备份与冗余——假设一切最终都会失效。
+- 评估：在构建之前定义"成功"，否则之后将无法证明。
 [/en]
 
 [zh]
